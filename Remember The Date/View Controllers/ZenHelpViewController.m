@@ -1,22 +1,22 @@
 //
-//  SecondViewController.m
+//  ZenHelpViewController.m
 //  Remember The Date
 //
-//  Created by Eduardo Fonseca on 10/9/14.
+//  Created by Eduardo Fonseca on 10/10/14.
 //  Copyright (c) 2014 RememberTheDate. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "ZenHelpViewController.h"
 
-@interface SecondViewController ()
+@interface ZenHelpViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation ZenHelpViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
