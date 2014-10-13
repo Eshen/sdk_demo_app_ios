@@ -8,7 +8,7 @@
 
 #import "NewDateViewController.h"
 
-@interface NewDateViewController ()
+@interface NewDateViewController ()<UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *dateNameTextField;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 
@@ -20,6 +20,12 @@
     [super viewDidLoad];
     self.datePicker.minimumDate = [NSDate date];
     // Do any additional setup after loading the view.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self.dateNameTextField becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,8 +54,20 @@
         else
         {
             // Tell the user
+            UIAlertView *alert  = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"") message:NSLocalizedString(@"The date/time should be after, well, now.", @"") delegate:self cancelButtonTitle:NSLocalizedString(@"OK", @"") otherButtonTitles:nil];
+            
+            [alert show];
         }
     }
+    else
+    {
+        // Tell the user
+        UIAlertView *alert  = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"") message:NSLocalizedString(@"You must fill a Title", @"") delegate:self cancelButtonTitle:NSLocalizedString(@"OK", @"") otherButtonTitles:nil];
+        
+        [alert show];
+
+    }
+    
 }
 
 - (IBAction)onCancelTapped:(id)sender {
@@ -57,5 +75,6 @@
         
     }];   
 }
+
 
 @end

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A329f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -20,7 +21,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Girlfriend's birthday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjR-3p-wVQ">
-                                            <rect key="frame" x="13" y="12" width="204" height="20.5"/>
+                                            <rect key="frame" x="23" y="12" width="194" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -36,7 +37,7 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="zjR-3p-wVQ" firstAttribute="leading" secondItem="IDr-3c-f1Q" secondAttribute="leadingMargin" constant="5" id="Jqf-3x-ztC"/>
+                                        <constraint firstItem="zjR-3p-wVQ" firstAttribute="leading" secondItem="IDr-3c-f1Q" secondAttribute="leadingMargin" constant="15" id="Jqf-3x-ztC"/>
                                         <constraint firstAttribute="centerY" secondItem="mug-cx-6Je" secondAttribute="centerY" id="R4o-1c-rWg"/>
                                         <constraint firstItem="mug-cx-6Je" firstAttribute="leading" secondItem="zjR-3p-wVQ" secondAttribute="trailing" constant="10" id="UX3-ad-pRg"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="mug-cx-6Je" secondAttribute="trailing" constant="5" id="ZCK-lb-NTU"/>
@@ -151,6 +152,7 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title of your date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uQk-fX-LPN">
                                         <rect key="frame" x="15" y="7" width="290" height="30"/>
+                                        <color key="tintColor" red="0.8980392157" green="0.1764705882" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -326,10 +328,10 @@
         <scene sceneID="KEV-zI-pY1">
             <objects>
                 <tableViewController id="rlp-cE-Oy8" customClass="CreateProfileTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gzk-Ze-ccn">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="gzk-Ze-ccn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection id="d74-mc-eoh">
                                 <cells>
@@ -367,11 +369,12 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eD7-gK-yGV">
                                                     <rect key="frame" x="15" y="7" width="290" height="30"/>
+                                                    <color key="tintColor" red="0.8980392157" green="0.1764705882" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="aig-XN-FAp"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -388,11 +391,12 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WaO-4c-Zw3">
                                                     <rect key="frame" x="15" y="7" width="290" height="30"/>
+                                                    <color key="tintColor" red="0.8980392157" green="0.1764705882" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="liu-gb-6Kn"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -409,11 +413,12 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IXT-Qp-6xH">
                                                     <rect key="frame" x="15" y="7" width="290" height="30"/>
+                                                    <color key="tintColor" red="0.8980392157" green="0.1764705882" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="DJs-ko-MBz"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>

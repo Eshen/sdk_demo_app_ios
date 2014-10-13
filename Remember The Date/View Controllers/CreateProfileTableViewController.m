@@ -8,7 +8,7 @@
 
 #import "CreateProfileTableViewController.h"
 
-@interface CreateProfileTableViewController ()
+@interface CreateProfileTableViewController ()<UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *pictureButton;
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
@@ -35,8 +35,9 @@
         self.nameTextField.text         = [defaults stringForKey:@"userName"];
         self.emailTextField.text        = [defaults stringForKey:@"email"];
         self.passwordTextField.text     = [defaults stringForKey:@"password"];
-
     }
+    
+    self.pictureButton.layer.cornerRadius   = CGRectGetWidth(self.pictureButton.frame)/2;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,6 +66,9 @@
     else
     {
         // Alert user
+        UIAlertView *alert  = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"") message:NSLocalizedString(@"Please fill out all fields.", @"") delegate:self cancelButtonTitle:NSLocalizedString(@"OK", @"") otherButtonTitles:nil];
+        
+        [alert show];
     }
 }
 

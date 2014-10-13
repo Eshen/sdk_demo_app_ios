@@ -8,9 +8,10 @@
 
 #import "DateTableViewController.h"
 
-@interface DateTableViewController ()
+@interface DateTableViewController ()<UIAlertViewDelegate>
 @property (nonatomic, strong)   NSArray     *notificationsArray;
 @property (nonatomic, strong)   NSDateFormatter *formatter;
+@property (nonatomic, strong)   NSIndexPath *indexPathToBeDeleted;
 @end
 
 @implementation DateTableViewController
@@ -21,6 +22,7 @@
     self.formatter  = [[NSDateFormatter alloc] init];
     [self.formatter setTimeStyle:NSDateFormatterNoStyle];
     [self.formatter setDateStyle:NSDateFormatterShortStyle];
+    [self.formatter setDateFormat:@"MMM dd"];
     
 }
 
@@ -89,9 +91,25 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete)
     {
-        UILocalNotification *notification   = [self.notificationsArray objectAtIndex:indexPath.row];
+        self.indexPathToBeDeleted   = indexPath;
+        UIAlertView *alert  = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Are you sure?", @"") message:NSLocalizedString(@"You can't undo this.", @"") delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", @"") otherButtonTitles:NSLocalizedString(@"OK", @""), nil];
+        
+        [alert show];
+        
+    }
+}
+
+#pragma mark - AlertView
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if ([[alertView buttonTitleAtIndex:buttonIndex] isEqualToString:NSLocalizedString(@"OK", @"")])
+    {
+        UILocalNotification *notification   = [self.notificationsArray objectAtIndex:self.indexPathToBeDeleted.row];
         [[UIApplication sharedApplication] cancelLocalNotification:notification];
         [self reloadTableView];
+        
+        self.indexPathToBeDeleted   = nil;
     }
 }
 
