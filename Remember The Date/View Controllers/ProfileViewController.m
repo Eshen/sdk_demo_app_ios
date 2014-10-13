@@ -27,9 +27,23 @@
     [super viewWillAppear:animated];
     NSUserDefaults  *defaults   = [NSUserDefaults standardUserDefaults];
     
-    self.nameLabel.text         = [defaults stringForKey:@"userName"];
-    self.emailLabel.text        = [defaults stringForKey:@"email"];
-    // Photo
+    if ([defaults stringForKey:@"userName"] != nil)
+    {
+        self.nameLabel.text         = [defaults stringForKey:@"userName"];
+        self.emailLabel.text        = [defaults stringForKey:@"email"];
+        
+        // Photo
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths firstObject];
+        NSString *getImagePath = [documentsDirectory stringByAppendingPathComponent:@"savedImage.png"];
+        UIImage *img = [UIImage imageWithContentsOfFile:getImagePath];
+        
+        self.userImageView.image    = img;
+    }
+    
+    self.userImageView.layer.cornerRadius   = CGRectGetWidth(self.userImageView.frame)/2;
+    self.userImageView.layer.masksToBounds  = YES;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,7 +55,6 @@
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"userName"];
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"email"];
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"password"];
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"photo"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     [self dismissViewControllerAnimated:YES completion:^{

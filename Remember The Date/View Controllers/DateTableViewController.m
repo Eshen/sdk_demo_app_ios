@@ -31,6 +31,15 @@
     [self reloadTableView];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    if ([[NSUserDefaults standardUserDefaults] stringForKey:@"userName"] == nil)
+    {
+        [self onProfileTapped:nil];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
