@@ -28,7 +28,7 @@
     [plusButton setImage:[UIImage imageNamed:@"icoAdd"] forState:UIControlStateNormal];
     [plusButton setImage:[UIImage imageNamed:@"icoAddActive"] forState:UIControlStateHighlighted];
     plusButton.layer.cornerRadius   = 30;
-    plusButton.frame        = CGRectMake((CGRectGetWidth(self.view.frame)/2)-19, CGRectGetHeight(self.view.frame)-44, 38, 38);
+    plusButton.frame        = CGRectMake((CGRectGetWidth(self.view.frame)/2)-30, CGRectGetHeight(self.view.frame)-60, 60, 60);
     
     [plusButton addTarget:self action:@selector(didTapAdd:) forControlEvents:UIControlEventTouchUpInside];
     

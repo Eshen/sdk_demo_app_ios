@@ -7,11 +7,13 @@
 //
 
 #import "DateTableViewController.h"
+#import "NewDateViewController.h"
 
 @interface DateTableViewController ()<UIAlertViewDelegate>
 @property (nonatomic, strong)   NSArray     *notificationsArray;
 @property (nonatomic, strong)   NSDateFormatter *formatter;
 @property (nonatomic, strong)   NSIndexPath *indexPathToBeDeleted;
+@property (nonatomic, strong)   UIView  *emptyView;
 @end
 
 @implementation DateTableViewController
@@ -24,20 +26,23 @@
     [self.formatter setDateStyle:NSDateFormatterShortStyle];
     [self.formatter setDateFormat:@"MMM dd"];
     
+    self.emptyView  = [[[NSBundle mainBundle] loadNibNamed:@"EmptyView" owner:nil options:nil] firstObject];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [self reloadTableView];
+    if ([self.notificationsArray count] == 0)
+    {
+        [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+        [self.view bringSubviewToFront:self.emptyView];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    if ([[NSUserDefaults standardUserDefaults] stringForKey:@"userName"] == nil)
-    {
-        [self onProfileTapped:nil];
-    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -88,7 +93,22 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.notificationsArray count];
+    NSInteger   number  = [self.notificationsArray count];
+    if (number > 0)
+    {
+        [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+        [self.emptyView removeFromSuperview];
+    }
+    else
+    {
+        if ([self.emptyView superview] == nil)
+        {
+            [self.view addSubview:self.emptyView];
+        }
+        [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    }
+    
+    return number;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -106,6 +126,26 @@
         [alert show];
         
     }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    UINavigationController  *addController  = [self.storyboard instantiateViewControllerWithIdentifier:@"newDate"];
+    NewDateViewController   *newDateVC      = [[addController childViewControllers] firstObject];
+    
+    newDateVC.notification                  = [self.notificationsArray objectAtIndex:indexPath.row];
+    
+    [self presentViewController:addController animated:YES completion:^{
+        
+    }];
+
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 55;
 }
 
 #pragma mark - AlertView

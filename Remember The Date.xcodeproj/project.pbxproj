@@ -74,6 +74,7 @@
 		4D24705019E80ACF00A46373 /* NewDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D24704F19E80ACF00A46373 /* NewDateViewController.m */; };
 		4D24705319E80B7300A46373 /* ZenHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D24705219E80B7300A46373 /* ZenHelpViewController.m */; };
 		4D24705619E8111100A46373 /* SaveTheDateTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D24705519E8111100A46373 /* SaveTheDateTabBarController.m */; };
+		4D294BEE19EDED970070A30E /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D294BED19EDED970070A30E /* EmptyView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +166,7 @@
 		4D24705219E80B7300A46373 /* ZenHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenHelpViewController.m; sourceTree = "<group>"; };
 		4D24705419E8111100A46373 /* SaveTheDateTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveTheDateTabBarController.h; sourceTree = "<group>"; };
 		4D24705519E8111100A46373 /* SaveTheDateTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveTheDateTabBarController.m; sourceTree = "<group>"; };
+		4D294BED19EDED970070A30E /* EmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 		4D246FA519E7499600A46373 /* Remember The Date */ = {
 			isa = PBXGroup;
 			children = (
+				4D294BEC19EDED800070A30E /* Views */,
 				4D246FD619E74EDF00A46373 /* Images */,
 				4D246FCF19E74E7500A46373 /* View Controllers */,
 				4D246FAA19E7499600A46373 /* AppDelegate.h */,
@@ -323,6 +326,14 @@
 				4D24700D19E74EED00A46373 /* icon1024.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		4D294BEC19EDED800070A30E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D294BED19EDED970070A30E /* EmptyView.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,6 +474,7 @@
 				4D24701719E74EED00A46373 /* icoPhoto.png in Resources */,
 				4D24702819E74EED00A46373 /* icoAddActive@2x.png in Resources */,
 				4D24703819E74EED00A46373 /* icon57.png in Resources */,
+				4D294BEE19EDED970070A30E /* EmptyView.xib in Resources */,
 				4D24702219E74EED00A46373 /* icoHelp@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

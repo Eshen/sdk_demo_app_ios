@@ -8,6 +8,10 @@
 
 #import "NewDateViewController.h"
 
+#define MINUTE  60
+#define HOUR    60*MINUTE
+#define DAY     HOUR*24
+
 @interface NewDateViewController ()<UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *dateNameTextField;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
@@ -20,6 +24,21 @@
     [super viewDidLoad];
     self.datePicker.minimumDate = [NSDate date];
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    if (self.notification != nil)
+    {
+        self.datePicker.date        = self.notification.fireDate;
+        self.dateNameTextField.text = self.notification.alertBody;
+        
+        self.navigationItem.rightBarButtonItem.title    = NSLocalizedString(@"Save", @"");
+    }
+    else
+    {
+        self.datePicker.date        = [NSDate dateWithTimeIntervalSinceNow:DAY];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -40,6 +59,11 @@
         
         if (isAfter)
         {
+            if (self.notification != nil)
+            {
+                [[UIApplication sharedApplication] cancelLocalNotification:self.notification];
+            }
+            
             UILocalNotification *notification   = [[UILocalNotification alloc] init];
             notification.fireDate               = self.datePicker.date;
             notification.timeZone               = [NSTimeZone localTimeZone];
