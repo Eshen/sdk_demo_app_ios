@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ZendeskSDK/ZDSupportViewController.h>
 
-@interface ZenHelpViewController : UIViewController
+@interface ZenHelpViewController : ZDSupportViewController
 
 @end
