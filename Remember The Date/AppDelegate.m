@@ -26,6 +26,8 @@
 
 @implementation AppDelegate
 
+
+
 -(void) setupVisualStyle {
 
     // status bar
@@ -37,6 +39,21 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarTintColor:RED_COLOR];
     [[UINavigationBar appearance] setTitleTextAttributes:navbarAttributes];
+    
+    
+    [[ZDCoreCreateRequestView appearance] setPlaceholderTextColor:TEXT_COLOR_40];
+    [[ZDCoreCreateRequestView appearance] setTextEntryColor:TEXT_COLOR];
+    
+    [[ZDUITextView appearance] setTintColor:RED_COLOR];
+    
+    [[ZDCoreCreateRequestView appearance] setTextEntryFont:[UIFont fontWithName:@"Helvetica" size:16]];
+    
+    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+    [spinner setTintColor:RED_COLOR];
+    [spinner setColor:RED_COLOR];
+    [[ZDCoreCreateRequestView appearance] setSpinner:(id<ZDSpinnerDelegate>)spinner];
+    
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

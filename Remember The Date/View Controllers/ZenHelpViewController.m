@@ -7,8 +7,12 @@
 //
 
 #import "ZenHelpViewController.h"
+
+
 #import <ZendeskSDK/ZDHelpCenter.h>
+#import "RequestListViewController.h"
 #import <ZendeskSDK/ZDCoreSDK.h>
+
 
 
 
@@ -73,6 +77,9 @@
 }
 
 - (IBAction)showMyRequests:(id)sender {
+    RequestListViewController *vc = [RequestListViewController new];
+    //vc.title = self.title;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void) viewWillAppear:(BOOL)animated {
