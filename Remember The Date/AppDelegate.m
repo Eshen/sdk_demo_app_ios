@@ -18,6 +18,7 @@
 
 #define PLACEHOLDER_COLOR [UIColor colorWithRed:217.0f/255.f green:205.0f/255.0f blue:200.0f/255.0f alpha:1.0f]
 #define NAVBAR_COLOR [UIColor colorWithRed:240.0f/255.f green:240.0f/255.0f blue:240.0f/255.0f alpha:1.0f]
+#define EMAIL_COLOR [UIColor colorWithRed:214.0f/255.f green:214.0f/255.0f blue:214.0f/255.0f alpha:1.0f]
 
 
 @interface AppDelegate ()
@@ -48,13 +49,19 @@
     
     [[ZDCoreCreateRequestView appearance] setTextEntryFont:[UIFont fontWithName:@"Helvetica" size:16]];
     
-    /*
+    
     UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
     [spinner setTintColor:RED_COLOR];
     [spinner setColor:RED_COLOR];
+    
     [[ZDCoreCreateRequestView appearance] setSpinner:(id<ZDSpinnerDelegate>)spinner];
-    */
+    [[ZDRequestListLoadingTableCell appearance] setSpinner:(id<ZDSpinnerDelegate>)spinner];
+    [[ZDRequestListTableCell appearance] setLeftInset:20];
+    
+    [[ZDCoreCreateRequestView appearance] setSeperatorBackgroundColor:[UIColor colorWithWhite:0.8980f alpha:1.0f]];
+    [[ZDCoreCreateRequestView appearance] setEmailEntryTextColor:EMAIL_COLOR];
+    
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -83,7 +90,7 @@
              withSubdomain:@"https://rememberthedate.zendesk.com"
                   clientId:@"client_for_rtd_jwt_endpoint"
                  andSecret:@"d8bb54e67fea6c466294f8b23d673d75b0fb0408348b09b7d6694962a484f89c"];
-    
+  
     [ZDCoreSDK configure:^(ZDAccount *account, ZDRequestCreationConfig *requestCreationConfig) {
         account.userToken = @"test@mobile.com";
     }];

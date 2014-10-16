@@ -1,10 +1,11 @@
-/* 
-  Localizable.strings
-  Remember The Date
+/*
+ Localizable.strings
+ CoreSDKSample
+ 
+ Created by Zendesk on 18/03/2014.
+ Copyright (c) 2014 Zendesk. All rights reserved.
+ */
 
-  Created by Pierre Alain Bouchard on 15/10/2014.
-  Copyright (c) 2014 RememberTheDate. All rights reserved.
-*/
 
 //shared
 "ios.coreSDK.connectionError" = "No internet connection";
@@ -17,7 +18,7 @@
 "ios.coreSDK.createRequest.submit.button" = "Submit";
 "ios.coreSDK.createRequest.description.placeholder" = "Description";
 "ios.coreSDK.createRequest.error.request" = "Your request failed to send";
-
+"ios.coreSDK.createRequest.email.placeholder" = "Email";
 
 // request list
 "ios.coreSDK.requestList.empty" = "No requests currently open";

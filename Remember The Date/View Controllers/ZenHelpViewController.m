@@ -8,14 +8,11 @@
 
 #import "ZenHelpViewController.h"
 
-#import <ZendeskSDK/ZDCoreSDK.h>
-#import <ZendeskSDK/ZDHelpCenter.h>
 
+#import <ZendeskSDK/ZDHelpCenter.h>
+#import <ZendeskSDK/ZDCoreSDK.h>
 #import "RequestListViewController.h"
 #import "SaveTheDateTabBarController.h"
-
-
-
 
 
 @interface ZenHelpViewController ()
@@ -71,7 +68,7 @@
 - (IBAction)contactSupport:(id)sender {
     if ([[self userEmail] length] > 0) {
 
-        [ZDCoreSDK showRequestCreationWithNavController:self.navigationController
+         [ZDCoreSDK showRequestCreationWithNavController:self.navigationController
                                         withSuccess:^(NSData *data) {
                                             
                                             // do something here if you want to...
