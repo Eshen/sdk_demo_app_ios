@@ -76,6 +76,21 @@
 		4D24705619E8111100A46373 /* SaveTheDateTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D24705519E8111100A46373 /* SaveTheDateTabBarController.m */; };
 		4D294BEE19EDED970070A30E /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D294BED19EDED970070A30E /* EmptyView.xib */; };
 		B81EC0FE19EF1521009BE545 /* ZendeskSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81EC0FD19EF1521009BE545 /* ZendeskSDK.framework */; };
+		B837E5DA19EFDD0A00075019 /* btnContactSupport.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5CB19EFDD0A00075019 /* btnContactSupport.png */; };
+		B837E5DB19EFDD0A00075019 /* btnContactSupport@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5CC19EFDD0A00075019 /* btnContactSupport@2x.png */; };
+		B837E5DC19EFDD0A00075019 /* btnContactSupport@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5CD19EFDD0A00075019 /* btnContactSupport@3x.png */; };
+		B837E5DD19EFDD0A00075019 /* btnFeedback.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5CE19EFDD0A00075019 /* btnFeedback.png */; };
+		B837E5DE19EFDD0A00075019 /* btnFeedback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5CF19EFDD0A00075019 /* btnFeedback@2x.png */; };
+		B837E5DF19EFDD0A00075019 /* btnFeedback@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5D019EFDD0A00075019 /* btnFeedback@3x.png */; };
+		B837E5E019EFDD0A00075019 /* btnHelpCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5D119EFDD0A00075019 /* btnHelpCenter.png */; };
+		B837E5E119EFDD0A00075019 /* btnHelpCenter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5D219EFDD0A00075019 /* btnHelpCenter@2x.png */; };
+		B837E5E219EFDD0A00075019 /* btnHelpCenter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5D319EFDD0A00075019 /* btnHelpCenter@3x.png */; };
+		B837E5E319EFDD0A00075019 /* btnOpenTickets.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5D419EFDD0A00075019 /* btnOpenTickets.png */; };
+		B837E5E419EFDD0A00075019 /* btnOpenTickets@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5D519EFDD0A00075019 /* btnOpenTickets@2x.png */; };
+		B837E5E519EFDD0A00075019 /* btnOpenTickets@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5D619EFDD0A00075019 /* btnOpenTickets@3x.png */; };
+		B837E5E619EFDD0A00075019 /* helplanding.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5D719EFDD0A00075019 /* helplanding.png */; };
+		B837E5E719EFDD0A00075019 /* helplanding@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5D819EFDD0A00075019 /* helplanding@2x.png */; };
+		B837E5E819EFDD0A00075019 /* helplanding@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5D919EFDD0A00075019 /* helplanding@3x.png */; };
 		B8814D3019EECC3D0030D10B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8814D2F19EECC3D0030D10B /* Localizable.strings */; };
 		B8F46E3E19EEC94000E6D8EF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F46E3D19EEC94000E6D8EF /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
@@ -171,6 +186,21 @@
 		4D24705519E8111100A46373 /* SaveTheDateTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveTheDateTabBarController.m; sourceTree = "<group>"; };
 		4D294BED19EDED970070A30E /* EmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
 		B81EC0FD19EF1521009BE545 /* ZendeskSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZendeskSDK.framework; path = ../zendesk_mobile_ios_sdk/build/Release/ZendeskSDK.framework; sourceTree = "<group>"; };
+		B837E5CB19EFDD0A00075019 /* btnContactSupport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnContactSupport.png; sourceTree = "<group>"; };
+		B837E5CC19EFDD0A00075019 /* btnContactSupport@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnContactSupport@2x.png"; sourceTree = "<group>"; };
+		B837E5CD19EFDD0A00075019 /* btnContactSupport@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnContactSupport@3x.png"; sourceTree = "<group>"; };
+		B837E5CE19EFDD0A00075019 /* btnFeedback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnFeedback.png; sourceTree = "<group>"; };
+		B837E5CF19EFDD0A00075019 /* btnFeedback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnFeedback@2x.png"; sourceTree = "<group>"; };
+		B837E5D019EFDD0A00075019 /* btnFeedback@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnFeedback@3x.png"; sourceTree = "<group>"; };
+		B837E5D119EFDD0A00075019 /* btnHelpCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnHelpCenter.png; sourceTree = "<group>"; };
+		B837E5D219EFDD0A00075019 /* btnHelpCenter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnHelpCenter@2x.png"; sourceTree = "<group>"; };
+		B837E5D319EFDD0A00075019 /* btnHelpCenter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnHelpCenter@3x.png"; sourceTree = "<group>"; };
+		B837E5D419EFDD0A00075019 /* btnOpenTickets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnOpenTickets.png; sourceTree = "<group>"; };
+		B837E5D519EFDD0A00075019 /* btnOpenTickets@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnOpenTickets@2x.png"; sourceTree = "<group>"; };
+		B837E5D619EFDD0A00075019 /* btnOpenTickets@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnOpenTickets@3x.png"; sourceTree = "<group>"; };
+		B837E5D719EFDD0A00075019 /* helplanding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helplanding.png; sourceTree = "<group>"; };
+		B837E5D819EFDD0A00075019 /* helplanding@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "helplanding@2x.png"; sourceTree = "<group>"; };
+		B837E5D919EFDD0A00075019 /* helplanding@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "helplanding@3x.png"; sourceTree = "<group>"; };
 		B8814D2F19EECC3D0030D10B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		B8F46E3D19EEC94000E6D8EF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -280,6 +310,21 @@
 		4D246FD619E74EDF00A46373 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B837E5CB19EFDD0A00075019 /* btnContactSupport.png */,
+				B837E5CC19EFDD0A00075019 /* btnContactSupport@2x.png */,
+				B837E5CD19EFDD0A00075019 /* btnContactSupport@3x.png */,
+				B837E5CE19EFDD0A00075019 /* btnFeedback.png */,
+				B837E5CF19EFDD0A00075019 /* btnFeedback@2x.png */,
+				B837E5D019EFDD0A00075019 /* btnFeedback@3x.png */,
+				B837E5D119EFDD0A00075019 /* btnHelpCenter.png */,
+				B837E5D219EFDD0A00075019 /* btnHelpCenter@2x.png */,
+				B837E5D319EFDD0A00075019 /* btnHelpCenter@3x.png */,
+				B837E5D419EFDD0A00075019 /* btnOpenTickets.png */,
+				B837E5D519EFDD0A00075019 /* btnOpenTickets@2x.png */,
+				B837E5D619EFDD0A00075019 /* btnOpenTickets@3x.png */,
+				B837E5D719EFDD0A00075019 /* helplanding.png */,
+				B837E5D819EFDD0A00075019 /* helplanding@2x.png */,
+				B837E5D919EFDD0A00075019 /* helplanding@3x.png */,
 				4D246FD719E74EED00A46373 /* Launchimage5s.png */,
 				4D246FD819E74EED00A46373 /* Launchimage4s.png */,
 				4D246FD919E74EED00A46373 /* Launchimage 6.png */,
@@ -432,12 +477,17 @@
 				4D24702619E74EED00A46373 /* icoClose.png in Resources */,
 				4D24702019E74EED00A46373 /* icoHelpActive.png in Resources */,
 				4D24701C19E74EED00A46373 /* icoHome@3x.png in Resources */,
+				B837E5E019EFDD0A00075019 /* btnHelpCenter.png in Resources */,
 				4D24702419E74EED00A46373 /* icoClose@3x.png in Resources */,
+				B837E5DF19EFDD0A00075019 /* btnFeedback@3x.png in Resources */,
 				4D24702E19E74EED00A46373 /* emtpy@2x 2.png in Resources */,
+				B837E5E319EFDD0A00075019 /* btnOpenTickets.png in Resources */,
+				B837E5DB19EFDD0A00075019 /* btnContactSupport@2x.png in Resources */,
 				4D24701419E74EED00A46373 /* icoUser.png in Resources */,
 				4D24701E19E74EED00A46373 /* icoHelpActive@3x.png in Resources */,
 				4D24703919E74EED00A46373 /* icon72.png in Resources */,
 				4D24701A19E74EED00A46373 /* icoHomeActive@2x.png in Resources */,
+				B837E5DD19EFDD0A00075019 /* btnFeedback.png in Resources */,
 				4D24702119E74EED00A46373 /* icoHelp@3x.png in Resources */,
 				4D24702319E74EED00A46373 /* icoHelp.png in Resources */,
 				4D24701119E74EED00A46373 /* icoUser@3x.png in Resources */,
@@ -446,14 +496,19 @@
 				4D24701219E74EED00A46373 /* Launchimage 6 Plus.png in Resources */,
 				4D24701319E74EED00A46373 /* icoUser@2x.png in Resources */,
 				4D24704219E74EED00A46373 /* icon180.png in Resources */,
+				B837E5DE19EFDD0A00075019 /* btnFeedback@2x.png in Resources */,
+				B837E5E219EFDD0A00075019 /* btnHelpCenter@3x.png in Resources */,
 				4D246FB519E7499600A46373 /* Main.storyboard in Resources */,
+				B837E5DA19EFDD0A00075019 /* btnContactSupport.png in Resources */,
 				4D24702C19E74EED00A46373 /* icoAdd.png in Resources */,
 				4D246FBA19E7499600A46373 /* LaunchScreen.xib in Resources */,
+				B837E5E619EFDD0A00075019 /* helplanding.png in Resources */,
 				4D24702F19E74EED00A46373 /* emtpy.png in Resources */,
 				4D24703D19E74EED00A46373 /* icon@2x.png in Resources */,
 				4D24703C19E74EED00A46373 /* icon100.png in Resources */,
 				4D24703A19E74EED00A46373 /* icon76.png in Resources */,
 				B8814D3019EECC3D0030D10B /* Localizable.strings in Resources */,
+				B837E5E419EFDD0A00075019 /* btnOpenTickets@2x.png in Resources */,
 				4D24704119E74EED00A46373 /* icon152.png in Resources */,
 				4D24701819E74EED00A46373 /* icoHomeActive@3x.png in Resources */,
 				4D24704319E74EED00A46373 /* icon512.png in Resources */,
@@ -467,11 +522,13 @@
 				4D24702719E74EED00A46373 /* icoAddActive@3x.png in Resources */,
 				4D24702519E74EED00A46373 /* icoClose@2x.png in Resources */,
 				4D24701B19E74EED00A46373 /* icoHome@2x.png in Resources */,
+				B837E5E519EFDD0A00075019 /* btnOpenTickets@3x.png in Resources */,
 				4D24703619E74EED00A46373 /* icon50.png in Resources */,
 				4D24701019E74EED00A46373 /* Launchimage 6.png in Resources */,
 				4D24703219E74EED00A46373 /* bgTab.png in Resources */,
 				4D24703F19E74EED00A46373 /* icon120.png in Resources */,
 				4D24704019E74EED00A46373 /* icon144.png in Resources */,
+				B837E5DC19EFDD0A00075019 /* btnContactSupport@3x.png in Resources */,
 				4D24703019E74EED00A46373 /* bgTab@3x.png in Resources */,
 				4D24701519E74EED00A46373 /* icoPhoto@2x.png in Resources */,
 				4D24702B19E74EED00A46373 /* icoAdd@2x.png in Resources */,
@@ -481,13 +538,16 @@
 				4D24703419E74EED00A46373 /* icon29.png in Resources */,
 				4D24700F19E74EED00A46373 /* Launchimage4s.png in Resources */,
 				4D246FB719E7499600A46373 /* Images.xcassets in Resources */,
+				B837E5E719EFDD0A00075019 /* helplanding@2x.png in Resources */,
 				4D24703519E74EED00A46373 /* icon40.png in Resources */,
 				4D24702919E74EED00A46373 /* icoAddActive.png in Resources */,
+				B837E5E819EFDD0A00075019 /* helplanding@3x.png in Resources */,
 				4D24701719E74EED00A46373 /* icoPhoto.png in Resources */,
 				4D24702819E74EED00A46373 /* icoAddActive@2x.png in Resources */,
 				4D24703819E74EED00A46373 /* icon57.png in Resources */,
 				4D294BEE19EDED970070A30E /* EmptyView.xib in Resources */,
 				4D24702219E74EED00A46373 /* icoHelp@2x.png in Resources */,
+				B837E5E119EFDD0A00075019 /* btnHelpCenter@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
