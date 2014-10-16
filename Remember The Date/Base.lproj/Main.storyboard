@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -98,7 +99,7 @@
             </objects>
             <point key="canvasLocation" x="398" y="417"/>
         </scene>
-        <!--Zen Help View Controller-->
+        <!--Need Help ?-->
         <scene sceneID="R9Y-u6-5m1">
             <objects>
                 <viewController id="OPN-yg-tRA" customClass="ZenHelpViewController" sceneMemberID="viewController">
@@ -109,9 +110,58 @@
                     <view key="view" contentMode="scaleToFill" id="BHr-5s-suI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tif-94-rq1">
+                                <rect key="frame" x="70" y="100" width="180" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="sDq-Gg-Tl3"/>
+                                </constraints>
+                                <state key="normal" title="KB">
+                                    <color key="titleColor" red="0.8980392157" green="0.1764705882" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showHelpCenter:" destination="OPN-yg-tRA" eventType="touchUpInside" id="Jkn-st-Um3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vx1-eb-8Tm">
+                                <rect key="frame" x="70" y="214" width="180" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="sLU-NW-Gsj"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="xQh-Aw-zCd"/>
+                                </constraints>
+                                <state key="normal" title="Contact Support">
+                                    <color key="titleColor" red="0.8980392157" green="0.1764705882" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="contactSupport:" destination="OPN-yg-tRA" eventType="touchUpInside" id="0lX-Wc-2fY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qL-7R-Iqg">
+                                <rect key="frame" x="70" y="328" width="180" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="QIl-Ri-emd"/>
+                                    <constraint firstAttribute="width" constant="180" id="Rl6-zP-21A"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="180" id="UXI-Cp-KNU"/>
+                                </constraints>
+                                <state key="normal" title="My requests">
+                                    <color key="titleColor" red="0.8980392157" green="0.1764705882" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMyRequests:" destination="OPN-yg-tRA" eventType="touchUpInside" id="yVM-mP-QE0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="5qL-7R-Iqg" secondAttribute="centerX" id="QK1-aZ-JgH"/>
+                            <constraint firstItem="5qL-7R-Iqg" firstAttribute="top" secondItem="Vx1-eb-8Tm" secondAttribute="bottom" constant="80" id="RaW-Cr-Yaq"/>
+                            <constraint firstItem="Tif-94-rq1" firstAttribute="top" secondItem="BHr-5s-suI" secondAttribute="topMargin" constant="100" id="Rwq-RS-ps4"/>
+                            <constraint firstAttribute="centerX" secondItem="Vx1-eb-8Tm" secondAttribute="centerX" id="Ug5-ik-LRb"/>
+                            <constraint firstAttribute="centerX" secondItem="Tif-94-rq1" secondAttribute="centerX" id="l1g-ZB-3dS"/>
+                            <constraint firstItem="Vx1-eb-8Tm" firstAttribute="top" secondItem="Tif-94-rq1" secondAttribute="bottom" constant="80" id="uA6-Jh-dGE"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="nQF-7X-Guc"/>
+                    <navigationItem key="navigationItem" title="Need Help ?" id="nQF-7X-Guc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyY-E6-giG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -339,8 +389,8 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LUf-tP-yXj" id="2qS-vy-Orn">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeA-70-nf2">
-                                                    <rect key="frame" x="116" y="33" width="90" height="90"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeA-70-nf2">
+                                                    <rect key="frame" x="115" y="33" width="90" height="90"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="90" id="Jl9-oL-flB"/>

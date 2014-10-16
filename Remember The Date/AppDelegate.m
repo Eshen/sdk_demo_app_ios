@@ -30,10 +30,15 @@
     }
     
     // setup the sdk
+    
     [ZendeskSDK initialize:@"e5dd7520b178e21212f5cc2751a28f4b5a7dc76698dc79bd"
              withSubdomain:@"https://rememberthedate.zendesk.com"
                   clientId:@"client_for_rtd_jwt_endpoint"
                  andSecret:@"d8bb54e67fea6c466294f8b23d673d75b0fb0408348b09b7d6694962a484f89c"];
+    
+    [ZDCoreSDK configure:^(ZDAccount *account, ZDRequestCreationConfig *requestCreationConfig) {
+        account.userToken = @"test@mobile.com";
+    }];
     
     return YES;
 }

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <ZendeskSDK/ZDSupportViewController.h>
 
-@interface ZenHelpViewController : ZDSupportViewController
+@interface ZenHelpViewController : UIViewController
 
 @end
