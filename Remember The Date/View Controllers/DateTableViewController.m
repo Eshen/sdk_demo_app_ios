@@ -28,6 +28,8 @@
     
     self.emptyView  = [[[NSBundle mainBundle] loadNibNamed:@"EmptyView" owner:nil options:nil] firstObject];
     
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    self.tableView.backgroundColor  = [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -36,6 +38,7 @@
     if ([self.notificationsArray count] == 0)
     {
         [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+        self.emptyView.frame    = self.view.frame;
         [self.view bringSubviewToFront:self.emptyView];
     }
 }
@@ -104,6 +107,7 @@
         if ([self.emptyView superview] == nil)
         {
             [self.view addSubview:self.emptyView];
+            self.emptyView.frame    = self.view.frame;
         }
         [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     }
@@ -145,7 +149,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 55;
+    return 64;
 }
 
 #pragma mark - AlertView
@@ -156,7 +160,9 @@
     {
         UILocalNotification *notification   = [self.notificationsArray objectAtIndex:self.indexPathToBeDeleted.row];
         [[UIApplication sharedApplication] cancelLocalNotification:notification];
-        [self reloadTableView];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self reloadTableView];            
+        });
         
         self.indexPathToBeDeleted   = nil;
     }

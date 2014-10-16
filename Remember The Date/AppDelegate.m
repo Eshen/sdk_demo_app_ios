@@ -20,6 +20,7 @@
     // Visual setup
     
     [[UITabBar appearance] setSelectedImageTintColor: [UIColor colorWithRed:0.38 green:0.85 blue:0.82 alpha:1.0]];
+    [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
     
