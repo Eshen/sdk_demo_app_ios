@@ -2,8 +2,8 @@
  Localizable.strings
  CoreSDKSample
  
- Created by Zendesk on 18/03/2014.
- Copyright (c) 2014 Zendesk. All rights reserved.
+ Created by RTD on 18/03/2014.
+ Copyright (c) 2014 RTD. All rights reserved.
  */
 
 
@@ -12,8 +12,8 @@
 
 
 // request creation
-"ios.coreSDK.createRequest.title" = "Contact Zendesk";
-"ios.coreSDK.createRequest.requestSubject" = "Zendesk SDK request";
+"ios.coreSDK.createRequest.title" = "Contact RTD";
+"ios.coreSDK.createRequest.requestSubject" = "RTD SDK request";
 "ios.coreSDK.createRequest.cancel.button" = "Cancel";
 "ios.coreSDK.createRequest.submit.button" = "Submit";
 "ios.coreSDK.createRequest.description.placeholder" = "Description";
@@ -46,7 +46,7 @@
 "ios.coreSDK.commentList.retryButton" = "Retry";
 
 // help center
-"ios.ZDHelpCenter.support.title" = "Support";
+"ios.ZDHelpCenter.support.title" = "Knowledge Base";
 "ios.ZDHelpCenter.searchField.placeholder" = "How can we help?";
 
 //No results found
@@ -62,3 +62,31 @@
 "ios.ZDHelpCenter.sectionsError" = "Error retrieving sections";
 "ios.ZDHelpCenter.articlesError" = "Error retrieving articles";
 "ios.ZDHelpCenter.articleError" = "Error retrieving article";
+
+//Rate my app
+"ios.RMA.dialog.rateApp.button" = "Yes, rate RTD";
+"ios.RMA.dialog.sendFeedback.button" = "No, send us Feedback";
+"ios.RMA.dialog.dismiss.button" = "Don't ask me again";
+"ios.RMA.dialog.header.title" = "Are you happy with RTD?";
+"ios.RMA.request.header.title" = "Sorry about that";
+"ios.RMA.request.header.description" = "We want to make it better. Please tell us about any issues you're having.";
+"ios.RMA.request.success.title" = "Feeback sent.";
+"ios.RMA.request.success.description" = "Thank you for contacting RTD. We'll respond as soon as possible.";
+"ios.RMA.request.error.title" = "Something went wrong.";
+"ios.RMA.request.error.description" = "There was an error. Please try again or go back and edit your feedback.";
+"ios.RMA.request.textView.placeholder" = "Describe your issue";
+"ios.RMA.request.back.button" = "Back";
+"ios.RMA.request.sendFeedback.close.button" = "Close";
+"ios.RMA.request.sendFeedback.tryAgain.button" = "Try again";
+"ios.RMA.request.sendFeedback.button" = "Send Feedback";
+"ios.RMA.request.sendFeedback.subject" = "Rate my app request";
+"ios.RMA.request.sendFeedback.additionalSubdomain" = "Subdomain:";
+"ios.RMA.request.sendFeedback.success.toastMessage" = "Thank you for contacting RTD";
+"ios.RMA.request.sendFeedback.error.toastMessage" = "There was an error, please try again";
+"ios.ZDAPI.request.sendFeedback.device.osVersion" = "OS version:";
+"ios.ZDAPI.request.sendFeedback.device.model" = "Model:";
+"ios.ZDAPI.request.sendFeedback.device.location" = "Location Services:";
+"ios.ZDAPI.request.sendFeedback.device.totalMemory" = "Total Device Memory:";
+"ios.ZDAPI.request.sendFeedback.device.freeDiskspace" = "Free Diskspace:";
+"ios.ZDAPI.request.sendFeedback.device.batteryLevel" = "Battery Level:";
+

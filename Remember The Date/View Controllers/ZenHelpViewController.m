@@ -11,6 +11,7 @@
 
 #import <ZendeskSDK/ZDHelpCenter.h>
 #import <ZendeskSDK/ZDCoreSDK.h>
+#import <ZendeskSDK/ZDRMA.h>
 #import "RequestListViewController.h"
 #import "SaveTheDateTabBarController.h"
 
@@ -84,6 +85,47 @@
     }
 }
 - (IBAction)sendFeedback:(id)sender {
+    
+    NSString *email = [self userEmail];
+    if ([email length] > 0) {
+        
+        
+        
+        // Setup Rate My App
+        [ZDRMA configure:^(ZDAccount *account, ZDRMAConfigObject *config) {
+            
+            
+            
+            account.email = email;
+            
+            // configgure additional info
+            NSString *versionString = [NSString stringWithFormat:@"%@ (%@)",
+                                       [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"],
+                                       [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]];
+            
+            NSString *appVersion = [NSString stringWithFormat:@"App version: %@", versionString];
+            
+            config.additionalRequestInfo = [NSString stringWithFormat:@"Additional info here.\n%@", appVersion];
+        }];
+        
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        // OPTIONAL - Customize appearance
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        [ZDRMA configure:^(ZDAccount *account, ZDRMAConfigObject *config) {
+            
+            // set success and error dialog images images
+            config.successImageName = @"rma_tick";
+            config.errorImageName = @"rma_error";
+        }];
+        
+        
+        [ZDRMA showEveryTimeInView:self.view];
+        
+    } else {
+        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Wait a second..." message:@"You need to go in the profile screen and enter your email ..." delegate:self cancelButtonTitle:@"OK, doing it now :)" otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (IBAction)showMyRequests:(id)sender {
