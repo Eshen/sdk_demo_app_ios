@@ -48,16 +48,20 @@
     
     [[ZDCoreCreateRequestView appearance] setTextEntryFont:[UIFont fontWithName:@"Helvetica" size:16]];
     
+    /*
     UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
     [spinner setTintColor:RED_COLOR];
     [spinner setColor:RED_COLOR];
     [[ZDCoreCreateRequestView appearance] setSpinner:(id<ZDSpinnerDelegate>)spinner];
-    
+    */
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    // sync the default
+    NSUserDefaults  *defaults   = [NSUserDefaults standardUserDefaults];
+    [defaults synchronize];
     // Visual setup
     
     [[UITabBar appearance] setSelectedImageTintColor: [UIColor colorWithRed:0.38 green:0.85 blue:0.82 alpha:1.0]];

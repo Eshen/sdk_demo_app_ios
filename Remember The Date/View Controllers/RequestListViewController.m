@@ -78,7 +78,6 @@
     float containerHeight = self.contentView.frame.size.height - _header.frame.size.height;
     
     _requestList.frame= CGRectMake(0, 0, self.contentView.frame.size.width, [_requestList tableHeight]);
-    
     _requestListContainer.frame = CGRectMake(0, containerOriginY , self.contentView.frame.size.width, containerHeight);
     _requestListContainer.contentSize = CGSizeMake(self.contentView.frame.size.width, [_requestList tableHeight]);
 }

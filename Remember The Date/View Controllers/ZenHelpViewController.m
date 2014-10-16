@@ -8,10 +8,12 @@
 
 #import "ZenHelpViewController.h"
 
-
-#import <ZendeskSDK/ZDHelpCenter.h>
-#import "RequestListViewController.h"
 #import <ZendeskSDK/ZDCoreSDK.h>
+#import <ZendeskSDK/ZDHelpCenter.h>
+
+#import "RequestListViewController.h"
+#import "SaveTheDateTabBarController.h"
+
 
 
 
@@ -22,19 +24,9 @@
 
 @implementation ZenHelpViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
 
-    
-}
-- (IBAction)showHelpCenter:(id)sender {
-        [ZDHelpCenter showHelpCenterWithNavController:self.navigationController];
-}
 
-- (IBAction)contactSupport:(id)sender {
-    
-    
+-(void) setupSupportInformation {
     NSUserDefaults  *defaults   = [NSUserDefaults standardUserDefaults];
     
     if ([defaults stringForKey:@"userName"] != nil)
@@ -58,10 +50,23 @@
             account.userToken = @"mobile@zendesk.com";
             
         }];
-
+        
     }
 
+}
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+}
+
+
+- (IBAction)showHelpCenter:(id)sender {
+        [ZDHelpCenter showHelpCenterWithNavController:self.navigationController];
+}
+
+- (IBAction)contactSupport:(id)sender {
     
     [ZDCoreSDK showRequestCreationWithNavController:self.navigationController
                                         withSuccess:^(NSData *data) {
@@ -77,15 +82,17 @@
 }
 
 - (IBAction)showMyRequests:(id)sender {
+    SaveTheDateTabBarController * tabbarController = (SaveTheDateTabBarController*)self.tabBarController;
+    [tabbarController hideTabbar];
     RequestListViewController *vc = [RequestListViewController new];
-    //vc.title = self.title;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    NSLog(@"count : %@", self.view.subviews);
-    
+    [self setupSupportInformation];
+    SaveTheDateTabBarController * tabbarController = (SaveTheDateTabBarController*)self.tabBarController;
+    [tabbarController showTabbar];
 }
 
 

@@ -10,4 +10,7 @@
 
 @interface SaveTheDateTabBarController : UITabBarController
 
+-(void) hideTabbar;
+-(void) showTabbar;
+
 @end

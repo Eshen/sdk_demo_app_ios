@@ -8,6 +8,8 @@
 
 #import "SaveTheDateTabBarController.h"
 
+#define BUTTON_ADD_TAG 100
+
 @interface SaveTheDateTabBarController ()
 
 @end
@@ -31,11 +33,22 @@
     plusButton.frame        = CGRectMake((CGRectGetWidth(self.view.frame)/2)-30, CGRectGetHeight(self.view.frame)-60, 60, 60);
     
     [plusButton addTarget:self action:@selector(didTapAdd:) forControlEvents:UIControlEventTouchUpInside];
-    
+    [plusButton setTag:BUTTON_ADD_TAG];
     [self.view addSubview:plusButton];
     
     [self.tabBar setClipsToBounds:YES];
         
+}
+
+
+-(void) hideTabbar {
+    [self.tabBar setHidden:YES];
+    [[self.view viewWithTag:BUTTON_ADD_TAG] setHidden:YES];
+}
+
+-(void) showTabbar {
+    [self.tabBar setHidden:NO];
+    [[self.view viewWithTag:BUTTON_ADD_TAG] setHidden:NO];
 }
 
 - (void)didTapAdd:(id)sender
