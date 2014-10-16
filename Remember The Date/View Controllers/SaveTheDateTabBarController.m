@@ -34,6 +34,8 @@
     
     [self.view addSubview:plusButton];
     
+    [self.tabBar setClipsToBounds:YES];
+        
 }
 
 - (void)didTapAdd:(id)sender
