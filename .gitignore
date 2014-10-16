@@ -1,0 +1,27 @@
+# OSX
+.DS_Store
+
+# build
+build
+DerivedData
+
+# Workspace user data
+ZendeskSDK.xcworkspace/xcuserdata
+
+# Project user data
+ZendeskSDK/ZendeskSDK.xcodeproj/xcuserdata
+ZDRateMyAppSample/ZDRateMyAppSample.xcodeproj/xcuserdata/
+CoreSDKSample/CoreSDKSample.xcodeproj/xcuserdata/
+
+# Sample projects framework folders 
+ZDRateMyAppSample/ZDRateMyAppSample/Frameworks/
+CoreSDKSample/CoreSDKSample/Frameworks/
+
+
+# submodule
+ZDTests/KIF
+
+# Other
+.gitignore.swp
+**/Thumbs.db
+
