@@ -75,7 +75,6 @@
 		4D24705319E80B7300A46373 /* ZenHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D24705219E80B7300A46373 /* ZenHelpViewController.m */; };
 		4D24705619E8111100A46373 /* SaveTheDateTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D24705519E8111100A46373 /* SaveTheDateTabBarController.m */; };
 		4D294BEE19EDED970070A30E /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D294BED19EDED970070A30E /* EmptyView.xib */; };
-		B81EC0FE19EF1521009BE545 /* ZendeskSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81EC0FD19EF1521009BE545 /* ZendeskSDK.framework */; };
 		B837E5DA19EFDD0A00075019 /* btnContactSupport.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5CB19EFDD0A00075019 /* btnContactSupport.png */; };
 		B837E5DB19EFDD0A00075019 /* btnContactSupport@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5CC19EFDD0A00075019 /* btnContactSupport@2x.png */; };
 		B837E5DC19EFDD0A00075019 /* btnContactSupport@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5CD19EFDD0A00075019 /* btnContactSupport@3x.png */; };
@@ -92,6 +91,11 @@
 		B837E5E719EFDD0A00075019 /* helplanding@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5D819EFDD0A00075019 /* helplanding@2x.png */; };
 		B837E5E819EFDD0A00075019 /* helplanding@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B837E5D919EFDD0A00075019 /* helplanding@3x.png */; };
 		B837E5EC19EFF1FA00075019 /* RequestListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B837E5EB19EFF1FA00075019 /* RequestListViewController.m */; };
+		B857427319F060450043B3F6 /* rma_error.png in Resources */ = {isa = PBXBuildFile; fileRef = B857426F19F060450043B3F6 /* rma_error.png */; };
+		B857427419F060450043B3F6 /* rma_error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B857427019F060450043B3F6 /* rma_error@2x.png */; };
+		B857427519F060450043B3F6 /* rma_tick.png in Resources */ = {isa = PBXBuildFile; fileRef = B857427119F060450043B3F6 /* rma_tick.png */; };
+		B857427619F060450043B3F6 /* rma_tick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B857427219F060450043B3F6 /* rma_tick@2x.png */; };
+		B857427819F069AD0043B3F6 /* ZendeskSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B857427719F069AD0043B3F6 /* ZendeskSDK.framework */; };
 		B8814D3019EECC3D0030D10B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8814D2F19EECC3D0030D10B /* Localizable.strings */; };
 		B8F46E3E19EEC94000E6D8EF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F46E3D19EEC94000E6D8EF /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
@@ -186,7 +190,6 @@
 		4D24705419E8111100A46373 /* SaveTheDateTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveTheDateTabBarController.h; sourceTree = "<group>"; };
 		4D24705519E8111100A46373 /* SaveTheDateTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveTheDateTabBarController.m; sourceTree = "<group>"; };
 		4D294BED19EDED970070A30E /* EmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
-		B81EC0FD19EF1521009BE545 /* ZendeskSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZendeskSDK.framework; path = ../zendesk_mobile_ios_sdk/build/Release/ZendeskSDK.framework; sourceTree = "<group>"; };
 		B837E5CB19EFDD0A00075019 /* btnContactSupport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnContactSupport.png; sourceTree = "<group>"; };
 		B837E5CC19EFDD0A00075019 /* btnContactSupport@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnContactSupport@2x.png"; sourceTree = "<group>"; };
 		B837E5CD19EFDD0A00075019 /* btnContactSupport@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnContactSupport@3x.png"; sourceTree = "<group>"; };
@@ -204,6 +207,11 @@
 		B837E5D919EFDD0A00075019 /* helplanding@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "helplanding@3x.png"; sourceTree = "<group>"; };
 		B837E5EA19EFF1FA00075019 /* RequestListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestListViewController.h; sourceTree = "<group>"; };
 		B837E5EB19EFF1FA00075019 /* RequestListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestListViewController.m; sourceTree = "<group>"; };
+		B857426F19F060450043B3F6 /* rma_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rma_error.png; sourceTree = "<group>"; };
+		B857427019F060450043B3F6 /* rma_error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rma_error@2x.png"; sourceTree = "<group>"; };
+		B857427119F060450043B3F6 /* rma_tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rma_tick.png; sourceTree = "<group>"; };
+		B857427219F060450043B3F6 /* rma_tick@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rma_tick@2x.png"; sourceTree = "<group>"; };
+		B857427719F069AD0043B3F6 /* ZendeskSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZendeskSDK.framework; path = "Remember The Date/Framework/ZendeskSDK.framework"; sourceTree = "<group>"; };
 		B8814D2F19EECC3D0030D10B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		B8F46E3D19EEC94000E6D8EF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -213,7 +221,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B81EC0FE19EF1521009BE545 /* ZendeskSDK.framework in Frameworks */,
+				B857427819F069AD0043B3F6 /* ZendeskSDK.framework in Frameworks */,
 				B8F46E3E19EEC94000E6D8EF /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,7 +239,7 @@
 		4D246F9A19E7499600A46373 = {
 			isa = PBXGroup;
 			children = (
-				B81EC0FD19EF1521009BE545 /* ZendeskSDK.framework */,
+				B857427719F069AD0043B3F6 /* ZendeskSDK.framework */,
 				B8F46E3D19EEC94000E6D8EF /* SystemConfiguration.framework */,
 				4D246FA519E7499600A46373 /* Remember The Date */,
 				4D246FC219E7499600A46373 /* Remember The DateTests */,
@@ -315,6 +323,10 @@
 		4D246FD619E74EDF00A46373 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B857426F19F060450043B3F6 /* rma_error.png */,
+				B857427019F060450043B3F6 /* rma_error@2x.png */,
+				B857427119F060450043B3F6 /* rma_tick.png */,
+				B857427219F060450043B3F6 /* rma_tick@2x.png */,
 				B837E5CB19EFDD0A00075019 /* btnContactSupport.png */,
 				B837E5CC19EFDD0A00075019 /* btnContactSupport@2x.png */,
 				B837E5CD19EFDD0A00075019 /* btnContactSupport@3x.png */,
@@ -495,6 +507,7 @@
 				B837E5DD19EFDD0A00075019 /* btnFeedback.png in Resources */,
 				4D24702119E74EED00A46373 /* icoHelp@3x.png in Resources */,
 				4D24702319E74EED00A46373 /* icoHelp.png in Resources */,
+				B857427419F060450043B3F6 /* rma_error@2x.png in Resources */,
 				4D24701119E74EED00A46373 /* icoUser@3x.png in Resources */,
 				4D24704419E74EED00A46373 /* icon1024.png in Resources */,
 				4D24703719E74EED00A46373 /* icon.png in Resources */,
@@ -507,6 +520,7 @@
 				B837E5DA19EFDD0A00075019 /* btnContactSupport.png in Resources */,
 				4D24702C19E74EED00A46373 /* icoAdd.png in Resources */,
 				4D246FBA19E7499600A46373 /* LaunchScreen.xib in Resources */,
+				B857427319F060450043B3F6 /* rma_error.png in Resources */,
 				B837E5E619EFDD0A00075019 /* helplanding.png in Resources */,
 				4D24702F19E74EED00A46373 /* emtpy.png in Resources */,
 				4D24703D19E74EED00A46373 /* icon@2x.png in Resources */,
@@ -537,6 +551,7 @@
 				4D24703019E74EED00A46373 /* bgTab@3x.png in Resources */,
 				4D24701519E74EED00A46373 /* icoPhoto@2x.png in Resources */,
 				4D24702B19E74EED00A46373 /* icoAdd@2x.png in Resources */,
+				B857427519F060450043B3F6 /* rma_tick.png in Resources */,
 				4D24700E19E74EED00A46373 /* Launchimage5s.png in Resources */,
 				4D24703119E74EED00A46373 /* bgTab@2x.png in Resources */,
 				4D24703319E74EED00A46373 /* icon58.png in Resources */,
@@ -544,6 +559,7 @@
 				4D24700F19E74EED00A46373 /* Launchimage4s.png in Resources */,
 				4D246FB719E7499600A46373 /* Images.xcassets in Resources */,
 				B837E5E719EFDD0A00075019 /* helplanding@2x.png in Resources */,
+				B857427619F060450043B3F6 /* rma_tick@2x.png in Resources */,
 				4D24703519E74EED00A46373 /* icon40.png in Resources */,
 				4D24702919E74EED00A46373 /* icoAddActive.png in Resources */,
 				B837E5E819EFDD0A00075019 /* helplanding@3x.png in Resources */,
@@ -707,10 +723,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/pbouchard/Zendesk/sources/ios/zendesk_mobile_ios_sdk/build/Release,
+					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = "Remember The Date/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -727,10 +743,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/pbouchard/Zendesk/sources/ios/zendesk_mobile_ios_sdk/build/Release,
+					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = "Remember The Date/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
