@@ -26,31 +26,33 @@
 
 
 
--(void) setupSupportInformation {
+-(NSString *) userEmail {
     NSUserDefaults  *defaults   = [NSUserDefaults standardUserDefaults];
     
     if ([defaults stringForKey:@"userName"] != nil)
     {
         NSString* email = [defaults stringForKey:@"email"];
         if ([email length]>0) {
-            [ZDCoreSDK configure:^(ZDAccount *account, ZDRequestCreationConfig *requestCreationConfig) {
-                requestCreationConfig.tags = @[@"ios"];
-                requestCreationConfig.additionalRequestInfo = @"";
-                
-                account.email = email;
-                account.userToken = email;
-            }];
+            return email;
         }
-    } else {
+    }
+
+    return nil;
+}
+
+-(void) setupSupportInformation {
+
+    
+    NSString * email = [self userEmail];
+    
+    if ([email length] > 0) {
         [ZDCoreSDK configure:^(ZDAccount *account, ZDRequestCreationConfig *requestCreationConfig) {
             requestCreationConfig.tags = @[@"ios"];
             requestCreationConfig.additionalRequestInfo = @"";
             
-            account.email = @"mobile@zendesk.com";
-            account.userToken = @"mobile@zendesk.com";
-            
+            account.email = email;
+            account.userToken = email;
         }];
-        
     }
 
 }
@@ -67,8 +69,9 @@
 }
 
 - (IBAction)contactSupport:(id)sender {
-    
-    [ZDCoreSDK showRequestCreationWithNavController:self.navigationController
+    if ([[self userEmail] length] > 0) {
+
+        [ZDCoreSDK showRequestCreationWithNavController:self.navigationController
                                         withSuccess:^(NSData *data) {
                                             
                                             // do something here if you want to...
@@ -77,15 +80,29 @@
                                             
                                             // do something here if you want to...
                                         }];
+    }
+    else {
+        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Wait a second..." message:@"You need to go in the profile screen and enter your email ..." delegate:self cancelButtonTitle:@"OK, doing it now :)" otherButtonTitles:nil];
+        [alert show];
+    }
 }
 - (IBAction)sendFeedback:(id)sender {
 }
 
 - (IBAction)showMyRequests:(id)sender {
-    SaveTheDateTabBarController * tabbarController = (SaveTheDateTabBarController*)self.tabBarController;
-    [tabbarController hideTabbar];
-    RequestListViewController *vc = [RequestListViewController new];
-    [self.navigationController pushViewController:vc animated:YES];
+    
+    if ([[self userEmail] length] > 0) {
+        
+        SaveTheDateTabBarController * tabbarController = (SaveTheDateTabBarController*)self.tabBarController;
+        [tabbarController hideTabbar];
+        RequestListViewController *vc = [RequestListViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else {
+        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Wait a second..." message:@"You need to go in the profile screen and setup your email ..." delegate:self cancelButtonTitle:@"OK, doing it now :)" otherButtonTitles:nil];
+        [alert show];
+    }
+    
 }
 
 -(void) viewWillAppear:(BOOL)animated {
