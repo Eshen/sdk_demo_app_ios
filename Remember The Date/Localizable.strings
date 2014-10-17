@@ -18,7 +18,7 @@
 "ios.coreSDK.createRequest.submit.button" = "Submit";
 "ios.coreSDK.createRequest.description.placeholder" = "Description";
 "ios.coreSDK.createRequest.error.request" = "Your request failed to send";
-"ios.coreSDK.createRequest.email.placeholder" = "Email";
+"ios.coreSDK.createRequest.email.placeholder" = "Email (mandatory)";
 
 // request list
 "ios.coreSDK.requestList.empty" = "No requests currently open";
