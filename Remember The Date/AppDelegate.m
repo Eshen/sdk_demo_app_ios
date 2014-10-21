@@ -59,6 +59,7 @@
     [[ZDCoreCreateRequestView appearance] setSpinner:(id<ZDSpinnerDelegate>)spinner];
     [[ZDRequestListLoadingTableCell appearance] setSpinner:(id<ZDSpinnerDelegate>)spinner];
     [[ZDRequestListTableCell appearance] setLeftInset:20];
+    [[ZDRequestListTableCell appearance] setUnreadColor:RED_COLOR];
     
     [[ZDCoreCreateRequestView appearance] setSeperatorBackgroundColor:[UIColor colorWithWhite:0.8980f alpha:1.0f]];
     [[ZDCoreCreateRequestView appearance] setEmailEntryTextColor:EMAIL_COLOR];
@@ -96,7 +97,6 @@
                  andSecret:@"d8bb54e67fea6c466294f8b23d673d75b0fb0408348b09b7d6694962a484f89c"];
   
     [ZDCoreSDK configure:^(ZDAccount *account, ZDRequestCreationConfig *requestCreationConfig) {
-        account.userToken = @"test@mobile.com";
     }];
     
     return YES;
