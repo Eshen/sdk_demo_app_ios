@@ -27,6 +27,13 @@ typedef void (^ZDToastAnimation) (BOOL animatingIn, CGFloat height);
  */
 typedef void (^ZDToastButtonAction) (void);
 
+
+/**
+ * Toast button action block.
+ */
+typedef void (^ZDToastCompletion) (void);
+
+
 /**
  * The view for presenting default toast messages.
  * @since 0.1
@@ -71,6 +78,10 @@ typedef void (^ZDToastButtonAction) (void);
     
 }
 
+
+#pragma mark - Animation Properties
+
+
 /**
  * Timestamp for the point at which the toast has finished animating in.
  * @since 0.1
@@ -90,17 +101,23 @@ typedef void (^ZDToastButtonAction) (void);
 @property (nonatomic, copy) ZDToastButtonAction buttonBlock;
 
 
+#pragma mark - Parent View Controller
+
+
 /**
  * The parent view controller specified when presenting the toast.
  */
 @property (nonatomic, weak) UIViewController *viewController;
 
 
+#pragma mark - Lifecycle
+
+
 /**
  * Initialise and animate in a new toast.
  * @param view the view in which the toast is to be presented
  * @param initialYPosisition the y for the start of the toast frame
- * @param msg the text to be presented
+ * @param message the text to be presented
  * @param type the ZDToastTypeEnum type of the toast
  * @param durationInSeconds the duration for which the toast should be fully visible
  * @param animationTime the time the toast should spend per animation in/out
@@ -108,24 +125,42 @@ typedef void (^ZDToastButtonAction) (void);
  * @param animateIn YES to animate in
  * @since 0.1
  */
-- (id) initInView:(UIView*)view
-forViewController:(UIViewController*)viewController
-              atY:(CGFloat)initialYPosisition
-      withMessage:(NSString*)msg
-       buttonText:(NSString*)buttonText
-     buttonAction:(ZDToastButtonAction)buttonActionBlock
-          andType:(ZDToastUIType)type
-         duration:(NSTimeInterval)durationInSeconds
-    animationTime:(NSTimeInterval)animationTime
-        animation:(ZDToastAnimation)animationBlock
-        animateIn:(BOOL)animateIn;
+- (instancetype) initInView:(UIView*)view
+          forViewController:(UIViewController*)viewController
+                        atY:(CGFloat)initialYPosisition
+                withMessage:(NSString*)message
+                 buttonText:(NSString*)buttonText
+               buttonAction:(ZDToastButtonAction)buttonActionBlock
+                    andType:(ZDToastUIType)type
+                   duration:(NSTimeInterval)durationInSeconds
+              animationTime:(NSTimeInterval)animationTime
+                  animation:(ZDToastAnimation)animationBlock
+                  animateIn:(BOOL)animateIn;
+
+
+#pragma mark Presentation and Dissmissal
 
 
 /**
- * Dismiss thias toast.
+ * Present this toast.
+ * @param animate if YES animate the dismiss
+ */
+- (void) present:(BOOL)animate;
+
+
+/**
+ * Dismiss this toast.
  * @param animate if YES animate the dismiss
  */
 - (void) dismiss:(BOOL)animate;
+
+
+/**
+ * Dismiss this toast.
+ * @param animate if YES animate the dismiss
+ * @param completion A block that is executed after the toast has been dismissed.
+ */
+- (void) dismiss:(BOOL)animate comepletion:(ZDToastCompletion)completion;
 
 
 @end

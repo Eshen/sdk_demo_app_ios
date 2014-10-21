@@ -10,6 +10,12 @@
 
 @interface ZDHelpCenterTableDelegate : NSObject <UITableViewDelegate>
 
+
+/**
+ * Block touches when there is no network connectivity. 
+ */
+@property (nonatomic, assign, readonly) BOOL blockTouches;
+
 @end
 
 

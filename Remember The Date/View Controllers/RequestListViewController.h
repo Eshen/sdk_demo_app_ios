@@ -12,7 +12,6 @@
 
 @interface RequestListViewController : ZDUIUIViewController
 
-
 @property (nonatomic, strong) UIScrollView *requestListContainer;
 @property (nonatomic, strong) UIView *header;
 @property (nonatomic, strong) ZDRequestListTable *requestList;

@@ -118,6 +118,8 @@
  */
 - (CGFloat) preferredHeight;
 
+-(CGFloat) topLayoutGuide;
+
 
 @end
 

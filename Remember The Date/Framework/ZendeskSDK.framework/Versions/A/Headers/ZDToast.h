@@ -67,7 +67,6 @@
  * @param type ZDToastUIType specifying the type of toast to be displayed
  * @param view the view from which the message will animate down
  * @param viewController the view controller in which to present the toast
- * @param initialYPosisition the y position in the view to present from
  * @param durationInSeconds total duration the toast will be displayed for including animations
  * @param animationBlock block with any UI changes to be performed at the same time as the toast animation
  * @param animated YES to animate in
@@ -77,7 +76,6 @@
               ofType:(ZDToastUIType)type
               inView:(UIView *)view
     inViewController:(UIViewController *)viewController
-          startingAt:(CGFloat)initialYPosisition
         withDuration:(NSTimeInterval)durationInSeconds
         andAnimation:(ZDToastAnimation)animationBlock
             animated:(BOOL)animated;

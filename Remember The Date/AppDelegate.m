@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <ZendeskSDK/ZendeskSDK.h>
+#import <ZendeskSDK/ZDSupportView.h>
 
 #define RED_COLOR [UIColor colorWithRed:232.0f/255.f green:42.0f/255.0f blue:42.0f/255.0f alpha:1.0f]
 #define ORANGE_COLOR [UIColor colorWithRed:253.0f/255.f green:144.0f/255.0f blue:38.0f/255.0f alpha:1.0f]
@@ -61,6 +62,9 @@
     
     [[ZDCoreCreateRequestView appearance] setSeperatorBackgroundColor:[UIColor colorWithWhite:0.8980f alpha:1.0f]];
     [[ZDCoreCreateRequestView appearance] setEmailEntryTextColor:EMAIL_COLOR];
+    
+    [[ZDSupportView appearance] setBtnContactUsColor:RED_COLOR];
+
     
 }
 

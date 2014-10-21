@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class ZDReachability;
+@class ZDReachability, ZDToastView;
 
 
 /**
@@ -45,6 +45,12 @@ ZDUIIsLandscape()
  * All subclasses should use this view as a base for their view hierarchy.
  */
 @property (nonatomic, strong) UIView *contentView;
+
+
+/**
+ * A toast for notifying users about network connectivity issues and request errors.
+ */
+@property (nonatomic, strong) ZDToastView *toastView;
 
 
 /**

@@ -60,6 +60,10 @@
 
 
 - (IBAction)showHelpCenter:(id)sender {
+    SaveTheDateTabBarController * tabbarController = (SaveTheDateTabBarController*)self.tabBarController;
+    [tabbarController hideTabbar];
+
+    
         [ZDHelpCenter showHelpCenterWithNavController:self.navigationController];
 }
 

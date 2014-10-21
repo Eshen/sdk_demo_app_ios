@@ -147,6 +147,11 @@ extern NSString * const ZD_HC_RequestError;
  */
 extern NSString * const ZD_ResignFirstResponder;
 
+/**
+ * Notification for presenting the Create Control dialog.
+ */
+
+extern NSString * const ZD_PresentCreateRequest;
 
 #pragma mark - HTTP Header
 

@@ -28,6 +28,8 @@
  */
 @property (nonatomic, strong) UIActivityIndicatorView *spinner;
 
+@property (nonatomic, strong) UIColor * btnContactUsColor UI_APPEARANCE_SELECTOR;
+
 
 /**
  * Sets the state of the support view. YES changes the view to a loading

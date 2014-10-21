@@ -52,8 +52,21 @@
     [self.requestListContainer addSubview:_requestList];
 
     [self.contentView addSubview:_requestListContainer];
+    
+    [self refreshPeriodically];
+    
 }
 
+
+-(void) refreshRequestList {
+    [_requestList refresh];
+}
+
+-(void) refreshPeriodically {
+    NSTimer* timer = [NSTimer timerWithTimeInterval:30.0f target:self selector:@selector(refreshRequestList) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+
+}
 
 - (void) viewWillLayoutSubviews
 {
@@ -64,12 +77,32 @@
 }
 
 
+- (CGFloat)topOfViewOffset
+{
+    CGFloat top = 0;
+    if ([self respondsToSelector:@selector(topLayoutGuide)])
+    {
+        top = self.topLayoutGuide.length;
+    }
+    return top;
+}
+
+-(CGFloat) AACStatusBarHeight
+{
+    CGSize statusBarSize = [[UIApplication sharedApplication] statusBarFrame].size;
+    return MIN(statusBarSize.width, statusBarSize.height);
+}
 
 - (void) layoutContent
 {
-    [super layoutContent];
+    //[super layoutContent];
     
-    _header.frame = CGRectMake(0, 0, self.contentView.frame.size.width, _header.frame.size.height);
+    float header_offset = 0;
+    if ([self.navigationController.navigationBar isTranslucent]) {
+        header_offset = self.navigationController.navigationBar.frame.size.height + [self AACStatusBarHeight];
+    }
+    
+    _header.frame = CGRectMake(0, header_offset, self.contentView.frame.size.width, _header.frame.size.height);
     
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // On layout setup the request list frame as desired, using 'tableHeight' to get the table height
@@ -90,9 +123,9 @@
     // On receiving a notification the table has been updated, use the new height to arrange your UI
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    [UIView animateWithDuration:0.25f animations:^{
+    //[UIView animateWithDuration:0.25f animations:^{
         _requestList.frame= CGRectMake(0, CGRectGetMaxY(_header.frame), self.contentView.frame.size.width, [_requestList tableHeight]);
-    }];
+    //}];
 
     [self.view setNeedsLayout];
 }

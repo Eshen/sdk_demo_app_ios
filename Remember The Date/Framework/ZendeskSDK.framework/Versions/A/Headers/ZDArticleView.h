@@ -19,24 +19,16 @@
 @property (nonatomic, strong) UIScrollView *article;
 
 /**
- * Article title label.
- */
-@property (nonatomic, strong) UILabel *articleTitle;
-
-/**
  * The article body.
  */
 @property (nonatomic, strong) UIWebView *articleWebView;
 
-/**
- * Displays the author and creation date.
- */
-@property (nonatomic, strong) UILabel *articleDetails;
 
 /**
  * A table for article attachments.
  */
 @property (nonatomic, strong) UITableView *attachments;
+
 
 
 @property (nonatomic, assign, readonly, getter=isLoading) BOOL loading;
