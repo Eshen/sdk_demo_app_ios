@@ -8,7 +8,7 @@
 
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 
 /**
  * Helper class for retrieving device information.

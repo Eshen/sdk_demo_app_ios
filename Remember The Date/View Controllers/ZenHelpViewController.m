@@ -64,7 +64,7 @@
     [tabbarController hideTabbar];
 
     
-        [ZDHelpCenter showHelpCenterWithNavController:self.navigationController];
+    [ZDHelpCenter showHelpCenterWithNavController:self.navigationController];
 }
 
 - (IBAction)contactSupport:(id)sender {
@@ -87,8 +87,6 @@
         
         // Setup Rate My App
         [ZDRMA configure:^(ZDAccount *account, ZDRMAConfigObject *config) {
-            
-            
             
             account.email = email;
             
