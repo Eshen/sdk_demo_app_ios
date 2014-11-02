@@ -46,7 +46,7 @@
     [_header addSubview:lowerBorder];
 
     // wrap the request list view into a scrollview.
-    _requestList = [ZDCoreSDK newRequestListWith:self andSelector:@selector(requestListUpdated)];
+    _requestList = [ZDKRequests newRequestListWith:self andSelector:@selector(requestListUpdated)];
     _requestListContainer = [[UIScrollView alloc] initWithFrame:CGRectZero];
     _requestListContainer.backgroundColor = [UIColor whiteColor];
     [self.requestListContainer addSubview:_requestList];

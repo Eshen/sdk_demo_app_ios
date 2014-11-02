@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import <ZendeskSDK/ZendeskSDK.h>
-#import <ZendeskSDK/ZDSupportView.h>
+#import <ZendeskSDK/ZDKSupportView.h>
 
 #define RED_COLOR [UIColor colorWithRed:232.0f/255.f green:42.0f/255.0f blue:42.0f/255.0f alpha:1.0f]
 #define ORANGE_COLOR [UIColor colorWithRed:253.0f/255.f green:144.0f/255.0f blue:38.0f/255.0f alpha:1.0f]
@@ -43,12 +43,12 @@
     [[UINavigationBar appearance] setTitleTextAttributes:navbarAttributes];
     
     
-    [[ZDCoreCreateRequestView appearance] setPlaceholderTextColor:TEXT_COLOR_40];
-    [[ZDCoreCreateRequestView appearance] setTextEntryColor:TEXT_COLOR];
+    [[ZDKCreateRequestView appearance] setPlaceholderTextColor:TEXT_COLOR_40];
+    [[ZDKCreateRequestView appearance] setTextEntryColor:TEXT_COLOR];
     
-    [[ZDUITextView appearance] setTintColor:RED_COLOR];
+    [[ZDKUITextView appearance] setTintColor:RED_COLOR];
     
-    [[ZDCoreCreateRequestView appearance] setTextEntryFont:[UIFont fontWithName:@"Helvetica" size:16]];
+    [[ZDKCreateRequestView appearance] setTextEntryFont:[UIFont fontWithName:@"Helvetica" size:16]];
     
     
     UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
@@ -56,15 +56,16 @@
     [spinner setTintColor:RED_COLOR];
     [spinner setColor:RED_COLOR];
     
-    [[ZDCoreCreateRequestView appearance] setSpinner:(id<ZDSpinnerDelegate>)spinner];
-    [[ZDRequestListLoadingTableCell appearance] setSpinner:(id<ZDSpinnerDelegate>)spinner];
-    [[ZDRequestListTableCell appearance] setLeftInset:20];
-    [[ZDRequestListTableCell appearance] setUnreadColor:RED_COLOR];
+    [[ZDKCreateRequestView appearance] setSpinner:(id<ZDKSpinnerDelegate>)spinner];
+    [[ZDRequestListLoadingTableCell appearance] setSpinner:(id<ZDKSpinnerDelegate>)spinner];
     
-    [[ZDCoreCreateRequestView appearance] setSeperatorBackgroundColor:[UIColor colorWithWhite:0.8980f alpha:1.0f]];
-    [[ZDCoreCreateRequestView appearance] setEmailEntryTextColor:EMAIL_COLOR];
+    [[ZDKRequestListTableCell appearance] setLeftInset:20];
+    [[ZDKRequestListTableCell appearance] setUnreadColor:RED_COLOR];
     
-    [[ZDSupportView appearance] setBtnContactUsColor:RED_COLOR];
+    [[ZDKCreateRequestView appearance] setSeparatorBackgroundColor:[UIColor colorWithWhite:0.8980f alpha:1.0f]];
+    [[ZDKCreateRequestView appearance] setEmailEntryTextColor:EMAIL_COLOR];
+    
+    //[[ZDKSupportView appearance] setBtnContactUsColor:RED_COLOR];
 
     
 }
@@ -91,12 +92,14 @@
     
     // setup the sdk
     
-    [ZendeskSDK initialize:@"e5dd7520b178e21212f5cc2751a28f4b5a7dc76698dc79bd"
-             withSubdomain:@"https://rememberthedate.zendesk.com"
-                  clientId:@"client_for_rtd_jwt_endpoint"
-                 andSecret:@"d8bb54e67fea6c466294f8b23d673d75b0fb0408348b09b7d6694962a484f89c"];
-  
-    [ZDCoreSDK configure:^(ZDAccount *account, ZDRequestCreationConfig *requestCreationConfig) {
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    [[ZDKConfig instance] initializeWithAppId:@"e5dd7520b178e21212f5cc2751a28f4b5a7dc76698dc79bd"
+             zendeskUrl:@"https://rememberthedate.zendesk.com"
+                  oAuthClientId:@"client_for_rtd_jwt_endpoint"
+                 andUserId:@""];
+      
+    [ZDKRequests configure:^(ZDKAccount *account, ZDKRequestCreationConfig *requestCreationConfig) {
+    
     }];
     
     return YES;

@@ -9,9 +9,7 @@
 #import "ZenHelpViewController.h"
 
 
-#import <ZendeskSDK/ZDHelpCenter.h>
-#import <ZendeskSDK/ZDCoreSDK.h>
-#import <ZendeskSDK/ZDRMA.h>
+#import <ZendeskSDK/ZendeskSDK.h>
 #import "RequestListViewController.h"
 #import "SaveTheDateTabBarController.h"
 
@@ -43,12 +41,12 @@
     
     NSString * email = [self userEmail];
 
-    [ZDCoreSDK configure:^(ZDAccount *account, ZDRequestCreationConfig *requestCreationConfig) {
+    [ZDKRequests configure:^(ZDKAccount *account, ZDKRequestCreationConfig *requestCreationConfig) {
         requestCreationConfig.tags = @[@"ios"];
         requestCreationConfig.additionalRequestInfo = @"";
         
         account.email = email;
-        account.userToken = email;
+        account.userId = email;
     }];
 }
 
@@ -64,11 +62,11 @@
     [tabbarController hideTabbar];
 
     
-    [ZDHelpCenter showHelpCenterWithNavController:self.navigationController];
+    [ZDKHelpCenter showHelpCenterWithNavController:self.navigationController];
 }
 
 - (IBAction)contactSupport:(id)sender {
-         [ZDCoreSDK showRequestCreationWithNavController:self.navigationController
+         [ZDKRequests showRequestCreationWithNavController:self.navigationController
                                         withSuccess:^(NSData *data) {
                                             
                                             // do something here if you want to...
@@ -86,7 +84,7 @@
         
         
         // Setup Rate My App
-        [ZDRMA configure:^(ZDAccount *account, ZDRMAConfigObject *config) {
+        [ZDKRMA configure:^(ZDKAccount *account, ZDKRMAConfigObject *config) {
             
             account.email = email;
             
@@ -104,7 +102,7 @@
         // OPTIONAL - Customize appearance
         /////////////////////////////////////////////////////////////////////////////////////////////////////
         
-        [ZDRMA configure:^(ZDAccount *account, ZDRMAConfigObject *config) {
+        [ZDKRMA configure:^(ZDKAccount *account, ZDKRMAConfigObject *config) {
             
             // set success and error dialog images images
             config.successImageName = @"rma_tick";
@@ -116,7 +114,8 @@
         //           available as part of the official SDK
         /////////////////////////////////////////////////////////////////////////////////////////////////////
         
-        [ZDRMA showEveryTimeInView:self.view];
+        [ZDKRMA showInView:self.view];
+        //[ZDKRMA showEveryTimeInView:self.view];
         
     } else {
         UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Wait a second..." message:@"You need to go in the profile screen and enter your email ..." delegate:self cancelButtonTitle:@"OK, doing it now :)" otherButtonTitles:nil];
@@ -139,6 +138,7 @@
     }
     
 }
+
 
 -(void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];

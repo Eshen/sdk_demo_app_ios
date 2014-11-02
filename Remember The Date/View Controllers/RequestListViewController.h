@@ -7,14 +7,14 @@
 //
 
 
-#import <ZendeskSDK/ZDCoreSDK.h>
+#import <ZendeskSDK/ZendeskSDK.h>
+#import <ZendeskSDK/ZDKUIViewController.h>
 
-
-@interface RequestListViewController : ZDUIUIViewController
+@interface RequestListViewController : ZDKUIViewController
 
 @property (nonatomic, strong) UIScrollView *requestListContainer;
 @property (nonatomic, strong) UIView *header;
-@property (nonatomic, strong) ZDRequestListTable *requestList;
+@property (nonatomic, strong) ZDKRequestListTable *requestList;
 
 
 @end

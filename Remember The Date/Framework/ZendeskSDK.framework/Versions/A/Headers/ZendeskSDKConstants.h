@@ -8,7 +8,7 @@
 
 
 
-#pragma mark - ZDToast
+#pragma mark - ZDKToast
 
 /**
  * Default toast animation time.
@@ -16,73 +16,88 @@
 extern NSTimeInterval const ZD_DefaultAnimationTime;
 
 
-#pragma mark - ZDAPI
+#pragma mark - ZDKAPI
 
 /**
  * Notification that the SDK config has been updated from the server.
  * This notification will only be sent if a change has been detected.
  */
-extern NSString * const ZDAPI_ConfigUpdated;
+extern NSString * const ZDKAPI_ConfigUpdated;
 
 /**
  * Notification for triggering storage of requests.
  */
-extern NSString * const ZDAPI_RequestsUpdated;
+extern NSString * const ZDKAPI_RequestsUpdated;
 
 /**
  * Notification for triggering storage of users.
  */
-extern NSString * const ZDAPI_UsersUpdated;
+extern NSString * const ZDKAPI_UsersUpdated;
+
+/**
+ * Notification that the list is about to be retrieved.
+ */
+extern NSString * const ZDKAPI_CommentListStarting;
+
+/**
+ * Notification that the list has been retrieved.
+ */
+extern NSString * const ZDKAPI_CommentListSuccess;
+
+/**
+ * Notification that there was an error while retrieving the comment list.
+ */
+extern NSString * const ZDKAPI_CommentListError;
 
 /**
  * Notification that a comment is about to be submitted.
  */
-extern NSString * const ZDAPI_CommentSubmissionStarting;
+extern NSString * const ZDKAPI_CommentSubmissionStarting;
 
 /**
  * Notification that a comment has been successfully submitted.
  */
-extern NSString * const ZDAPI_CommentSubmissionSuccess;
+extern NSString * const ZDKAPI_CommentSubmissionSuccess;
 
 /**
  * Notification that there was an error during comment submission.
  */
-extern NSString * const ZDAPI_CommentSubmissionError;
+extern NSString * const ZDKAPI_CommentSubmissionError;
 
 /**
  * Notification that a request is about to be submitted.
  */
-extern NSString * const ZDAPI_RequestSubmissionStarting;
+extern NSString * const ZDKAPI_RequestSubmissionStarting;
 
 /**
  * Notification that a request has been successfully submitted.
  */
-extern NSString * const ZDAPI_RequestSubmissionSuccess;
+extern NSString * const ZDKAPI_RequestSubmissionSuccess;
 
 /**
  * Notification that there was an error during request submission.
  */
-extern NSString * const ZDAPI_RequestSubmissionError;
+extern NSString * const ZDKAPI_RequestSubmissionError;
 
 /**
  * Notification that the request list is about to be retrieved.
  */
-extern NSString * const ZDAPI_RequestsStarting;
+extern NSString * const ZDKAPI_RequestsStarting;
 
 /**
  * Notification that the request list was successfulyl retrieved.
  */
-extern NSString * const ZDAPI_RequestsSuccess;
+extern NSString * const ZDKAPI_RequestsSuccess;
 
 /**
  * Notification that there was an error while retrieving the request list.
  */
-extern NSString * const ZDAPI_RequestsError;
+extern NSString * const ZDKAPI_RequestsError;
 
 /**
  * Notification that the network status has changed.
  */
-extern NSString * const ZDAPI_ReachabilityChangedNotification;
+extern NSString * const ZDKAPI_ReachabilityChangedNotification;
 
 
 
@@ -104,12 +119,20 @@ extern NSString * const ZD_HC_SectionsUpdated;
  */
 extern NSString * const ZD_HC_ArticlesUpdated;
 
+/**
+ * Notification that help centre arcticles were updated.
+ */
+extern NSString * const ZD_HC_AttachmentsStarting;
 
 /**
  * Notification that help centre arcticles were updated.
  */
 extern NSString * const ZD_HC_AttachmentsUpdated;
 
+/**
+ * Notification that help center article attachments failed to load.
+ */
+extern NSString * const ZD_HC_AttachmentsErrored;
 
 /**
  * Notification that help centre search results have been successfully retrieved.
@@ -147,11 +170,6 @@ extern NSString * const ZD_HC_RequestError;
  */
 extern NSString * const ZD_ResignFirstResponder;
 
-/**
- * Notification for presenting the Create Control dialog.
- */
-
-extern NSString * const ZD_PresentCreateRequest;
 
 #pragma mark - HTTP Header
 
@@ -168,6 +186,7 @@ extern NSString * const ZDD_Accept;
 extern NSString * const ZDD_TypeJSON;
 extern NSString * const ZDD_UserAgent;
 extern NSString * const ZDD_UserAgentValue;
+extern NSString * const ZDD_AcceptLanguage;
 
 
 #pragma mark - Error Domain
@@ -180,7 +199,7 @@ extern NSString * const ZDD_ERROR_Domain;
 extern NSString * const ZDD_ERROR_Key;
 
 
-#pragma mark - ZDRMA
+#pragma mark - ZDKRMA
 
 
 // itunes link formats
@@ -189,53 +208,53 @@ extern NSString * const iOSAppStoreURLFormat;
 
 
 // zendesk request submission strings
-extern NSString * const ZDRMARequestFeedbackTag;
-extern NSString * const ZDRMARequestIOSTag;
-extern NSString * const ZDRMARequestBuildVariantTag;
+extern NSString * const ZDKRMARequestFeedbackTag;
+extern NSString * const ZDKRMARequestIOSTag;
+extern NSString * const ZDKRMARequestBuildVariantTag;
 
 
 // persistence keys
-extern NSString * const ZDRMAChosenAction;
-extern NSString * const ZDRMADateOfActionChosen;
-extern NSString * const ZDRMAAppVersion;
-extern NSString * const ZDRMAVisitCount;
-extern NSString * const ZDRMAInitialCheckDate;
-extern NSString * const ZDRMARequestText;
+extern NSString * const ZDKRMAChosenAction;
+extern NSString * const ZDKRMADateOfActionChosen;
+extern NSString * const ZDKRMAAppVersion;
+extern NSString * const ZDKRMAVisitCount;
+extern NSString * const ZDKRMAInitialCheckDate;
+extern NSString * const ZDKRMARequestText;
 
 
 // default accessibility id
-extern NSString * const ZDRMAAccessibilityID;
+extern NSString * const ZDKRMAAccessibilityID;
 
 
 // notifications
 
 /** Posted immediately prior to the display of RMA dialog. */
-extern NSString * const ZDRMANotificationTriggered;
+extern NSString * const ZDKRMANotificationTriggered;
 
 /** User tapped 'Yes rate'. */
-extern NSString * const ZDRMANotificationYes;
+extern NSString * const ZDKRMANotificationYes;
 
 /** User tapped 'No, send feedback'. */
-extern NSString * const ZDRMANotificationNo;
+extern NSString * const ZDKRMANotificationNo;
 
 /** User tapped 'Don't ask again' */
-extern NSString * const ZDRMANotificationDontAsk;
+extern NSString * const ZDKRMANotificationDontAsk;
 
 /** User tapped 'back' on send feedback modal. */
-extern NSString * const ZDRMANotificationBack;
+extern NSString * const ZDKRMANotificationBack;
 
 /** User has tapped to send feedback. */
-extern NSString * const ZDRMANotificationSend;
+extern NSString * const ZDKRMANotificationSend;
 
 /** Posted immediately prior to the dismissal of RMA dialog. User info is a dictionary with a reference to the Dialog */
-extern NSString * const ZDRMANotificationWillHideDialog;
+extern NSString * const ZDKRMANotificationWillHideDialog;
 
 /** Used internally to trigger state persistence. */
-extern NSString * const ZDRMANotificationShouldStore;
+extern NSString * const ZDKRMANotificationShouldStore;
 
 /** Posted immediately after a successful submission of RMA feedback. */
-extern NSString * const ZDRMANotificationFeedbackSuccess;
+extern NSString * const ZDKRMANotificationFeedbackSuccess;
 
 /** Posted immediately after an unsuccessful submission of RMA feedback. */
-extern NSString * const ZDRMANotificationFeedbackError;
+extern NSString * const ZDKRMANotificationFeedbackError;
 
