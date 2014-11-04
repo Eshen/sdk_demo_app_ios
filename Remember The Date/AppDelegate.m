@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  Remember The Date
 //
-//  Created by Eduardo Fonseca on 10/9/14.
+//  Created by Zendesk on 10/9/14.
 //  Copyright (c) 2014 RememberTheDate. All rights reserved.
 //
 
@@ -30,7 +30,7 @@
 
 
 
--(void) setupVisualStyle {
+-(void) setupSDKStyle {
 
     // status bar
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
@@ -65,9 +65,6 @@
     [[ZDKCreateRequestView appearance] setSeparatorBackgroundColor:[UIColor colorWithWhite:0.8980f alpha:1.0f]];
     [[ZDKCreateRequestView appearance] setEmailEntryTextColor:EMAIL_COLOR];
     
-    //[[ZDKSupportView appearance] setBtnContactUsColor:RED_COLOR];
-
-    
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -87,20 +84,34 @@
         [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
     }
     
+    
+    
+    
     //
-    [self setupVisualStyle];
+    // Initialize the sdk
+    //
     
-    // setup the sdk
+    // Note:    If you do need to display the request list to your users, you will need to setup JWT until version 1.0
+    // ----     If you don't need tthe request list, use the short initialize method (which is not deprecated)
+    //          [[ZDKConfig instance] initializeWithAppId:(NSString *) andZendeskUrl:(NSString *)]
+    //
     
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    #pragma clang diagnostic ignored "-Wdeprecated-declarations"
     [[ZDKConfig instance] initializeWithAppId:@"e5dd7520b178e21212f5cc2751a28f4b5a7dc76698dc79bd"
              zendeskUrl:@"https://rememberthedate.zendesk.com"
                   oAuthClientId:@"client_for_rtd_jwt_endpoint"
                  andUserId:@""];
-      
-    [ZDKRequests configure:^(ZDKAccount *account, ZDKRequestCreationConfig *requestCreationConfig) {
     
-    }];
+    
+    //
+    // Style the SDK
+    //
+    
+    [self setupSDKStyle];
+    
+    //
+    //  The rest of the Mobile SDK code can be found in ZenHelpViewController.m
+    //
     
     return YES;
 }
