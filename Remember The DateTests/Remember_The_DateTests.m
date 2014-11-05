@@ -2,7 +2,7 @@
 //  Remember_The_DateTests.m
 //  Remember The DateTests
 //
-//  Created by Eduardo Fonseca on 10/9/14.
+//  Created by Zendesk on 10/9/14.
 //  Copyright (c) 2014 RememberTheDate. All rights reserved.
 //
 

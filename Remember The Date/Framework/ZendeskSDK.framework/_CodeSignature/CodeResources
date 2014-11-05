@@ -4,496 +4,568 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/ZDAPI.h</key>
+		<key>Headers/ZDKAPI.h</key>
 		<data>
-		nFvceq+16N2vIwuNFCrwJ5k1u7U=
+		V9YrOyuFic2/mhHVNpAmOJYoi+A=
 		</data>
-		<key>Headers/ZDAccount.h</key>
+		<key>Headers/ZDKAccount.h</key>
 		<data>
-		0OuCYB7o2mAWujJXuf7Qbl5zVy4=
+		KRc+XM0TuOeRuDmx13L5s8DejOg=
 		</data>
-		<key>Headers/ZDArticleView.h</key>
+		<key>Headers/ZDKAppSettings.h</key>
 		<data>
-		TwDH7YHZK+GjUTAX1ctAPt5/Gjs=
+		T3FvsHTWuDunSxDucLrul4uFRHw=
 		</data>
-		<key>Headers/ZDArticleViewController.h</key>
+		<key>Headers/ZDKArticleView.h</key>
 		<data>
-		+ZzUcomoaRiZtSZJwdS+1gLYtRM=
+		HLDw7Bc2qTQYex4qYYP9WO1X/E8=
 		</data>
-		<key>Headers/ZDCommentEntryView.h</key>
+		<key>Headers/ZDKArticleViewController.h</key>
 		<data>
-		4oRuOGM9cAfXTOmtFol8+HUP/ak=
+		mBYYZErYEbkvBesr0cZ0XsVaj6Q=
 		</data>
-		<key>Headers/ZDCoreCreateRequestViewController.h</key>
+		<key>Headers/ZDKBundleUtils.h</key>
 		<data>
-		H0pDaQ6csktXXR+Z/VSlq5jp++M=
+		GqMQsBcfAUaNWVSUj48NGfw/eho=
 		</data>
-		<key>Headers/ZDCoreSDK.h</key>
+		<key>Headers/ZDKCommentEntryView.h</key>
 		<data>
-		3Sz5Eajriw/HHFMU9dzdFFcpwA4=
+		dfFTGWhPnaq1fU8+xLxZYXmfnX0=
 		</data>
-		<key>Headers/ZDDeviceInfo.h</key>
+		<key>Headers/ZDKConfig.h</key>
 		<data>
-		z0mSj3rjjShcMDe9f6nFEYWu+6g=
+		lmU7aaHfpzPgyiWAx8V4JJ+brpE=
 		</data>
-		<key>Headers/ZDDispatcher.h</key>
+		<key>Headers/ZDKContactUsSettings.h</key>
 		<data>
-		dAGFybqDeSOOp6cYhgtujANzqyI=
+		1WKRvZLF5Os3rrheU3kfwhq2uvA=
 		</data>
-		<key>Headers/ZDDispatcherDelegate.h</key>
+		<key>Headers/ZDKConversationsSettings.h</key>
 		<data>
-		SBHjBxCDtb5G3kxX2dweGA+6ItM=
+		rw0dGc8DyzXBNljt1Ychnui/Oxk=
 		</data>
-		<key>Headers/ZDDispatcherResponse.h</key>
+		<key>Headers/ZDKCreateRequestView.h</key>
 		<data>
-		Y9STJS4Ej4FH4CpOd0pboGE8YGk=
+		Dd17zAqImNYIUMRTM6qCAUwa2MI=
 		</data>
-		<key>Headers/ZDETag.h</key>
+		<key>Headers/ZDKCreateRequestViewController.h</key>
 		<data>
-		VGB1M0x6mnFnPbBihf+K8coaudk=
+		kYio1ldhvsbuD/JeXdH3ADuw5UA=
 		</data>
-		<key>Headers/ZDHelpCenter.h</key>
+		<key>Headers/ZDKDeviceInfo.h</key>
 		<data>
-		dMBpNAqhDHpaHblesyWtVUEd1sw=
+		Zsp8ccR3M8stlF06H5OQ8J98VYc=
 		</data>
-		<key>Headers/ZDHelpCenterArticle.h</key>
+		<key>Headers/ZDKDispatcher.h</key>
 		<data>
-		v0qyQPPeWn7jifFsVTl8rwEvv3g=
+		8f1Qa0oVSsV/w8t2kEvWPfTm+MY=
 		</data>
-		<key>Headers/ZDHelpCenterArticleProvider.h</key>
+		<key>Headers/ZDKDispatcherDelegate.h</key>
 		<data>
-		hKndMkpFt47R1Akd8398N3CNmfw=
+		Hb+P0Lif6TGcQLG6k7DJ9oHl/hU=
 		</data>
-		<key>Headers/ZDHelpCenterAttachment.h</key>
+		<key>Headers/ZDKDispatcherResponse.h</key>
 		<data>
-		gl9K7fMYMeb10YysXiK/hk37Hpg=
+		r1hazJ1q+/NB5MrIURY0UBwmkJY=
 		</data>
-		<key>Headers/ZDHelpCenterAttachmentCell.h</key>
+		<key>Headers/ZDKETag.h</key>
 		<data>
-		Q4ETKZpezfphuLpJ/LbCGbJtOAY=
+		r3FdQYF8sqFEd1Kb55GmfpksWJw=
 		</data>
-		<key>Headers/ZDHelpCenterAttachmentProvider.h</key>
+		<key>Headers/ZDKHelpCenter.h</key>
 		<data>
-		F5kpHyz3GNAh5vie6r7pxd3XgSg=
+		cs0oEKF4wicKe6+ImtYFSi8rCoU=
 		</data>
-		<key>Headers/ZDHelpCenterCategory.h</key>
+		<key>Headers/ZDKHelpCenterArticle.h</key>
 		<data>
-		2TtmbGTXh3ZP6GpXSZbMjoCPnr4=
+		eBBxq/hlq9hJC1B6JjDs/S28n4E=
 		</data>
-		<key>Headers/ZDHelpCenterCategoryProvider.h</key>
+		<key>Headers/ZDKHelpCenterArticleProvider.h</key>
 		<data>
-		qT38DpULsjQh3ENaNRILz6jYnjU=
+		3lP4rngY5sqtoiOEObLYCxqF5qk=
 		</data>
-		<key>Headers/ZDHelpCenterDataSource.h</key>
+		<key>Headers/ZDKHelpCenterAttachment.h</key>
 		<data>
-		UpoWqffgM2MLCxs0ZOnnr7UKfOY=
+		aRFgfroTZyFUwniPJ49xZLTgY/4=
 		</data>
-		<key>Headers/ZDHelpCenterProvider.h</key>
+		<key>Headers/ZDKHelpCenterAttachmentCell.h</key>
 		<data>
-		HGUCEKvYcfLJfIE1rvb4gMDZKiY=
+		iydGOevMf7JZ72vujyjn/Sq7gOA=
 		</data>
-		<key>Headers/ZDHelpCenterSearchProvider.h</key>
+		<key>Headers/ZDKHelpCenterAttachmentProvider.h</key>
 		<data>
-		gXS68TKDkOrYzHcss2IXmaKlL/o=
+		OWmq+Y0Fx0rkszNXWweqeJld3PM=
 		</data>
-		<key>Headers/ZDHelpCenterSearchResultCell.h</key>
+		<key>Headers/ZDKHelpCenterCategory.h</key>
 		<data>
-		e0oezuyUofGqU/+seaYkHE1u9u8=
+		KIdf0RstahTIoZ2oNlxka4YPC5g=
 		</data>
-		<key>Headers/ZDHelpCenterSection.h</key>
+		<key>Headers/ZDKHelpCenterCategoryProvider.h</key>
 		<data>
-		E3mBc5StvYpJsOEjm3/Ee5MdhT0=
+		+93yA5RTDiaQil7PxPFFJxYtJxE=
 		</data>
-		<key>Headers/ZDHelpCenterSectionProvider.h</key>
+		<key>Headers/ZDKHelpCenterDataSource.h</key>
 		<data>
-		Xq6vJio+P3+etABaWalRQsXtekE=
+		sD/j7fdQK/1f7hXokorWrWLaKrI=
 		</data>
-		<key>Headers/ZDHelpCenterTableDelegate.h</key>
+		<key>Headers/ZDKHelpCenterProvider.h</key>
 		<data>
-		Hx6QfpwOPl3IGs3Zbs8K/YK33FU=
+		XRMtxg6sndKTNhV12Lfk+wyJ5gM=
 		</data>
-		<key>Headers/ZDKeychainWrapper.h</key>
+		<key>Headers/ZDKHelpCenterSearchProvider.h</key>
 		<data>
-		BhT4VtmLeqpfR1PWOUJdQbxgbME=
+		k8KU+9co/BzwMHxidULq0iBAMfY=
 		</data>
-		<key>Headers/ZDModelObject.h</key>
+		<key>Headers/ZDKHelpCenterSearchResultCell.h</key>
 		<data>
-		fLLposQJNyvA9A4/oKXjLLxo5Jg=
+		Aa5pfYSQ6YOPTOPOSkDtRXX4N8M=
 		</data>
-		<key>Headers/ZDRMA.h</key>
+		<key>Headers/ZDKHelpCenterSection.h</key>
 		<data>
-		IXp7vyktTd1dsCmdEfUIxM14CCM=
+		sYYHjJMIr8/fBGXoPuSZ9KztSlg=
 		</data>
-		<key>Headers/ZDRMAConfigObject.h</key>
+		<key>Headers/ZDKHelpCenterSectionProvider.h</key>
 		<data>
-		e/Yax5GCtwur3Di+iBjNCZIFKKw=
+		sR8uGw/XxbGKaOYrg0ixfBghemY=
 		</data>
-		<key>Headers/ZDRMADataObject.h</key>
+		<key>Headers/ZDKHelpCenterSettings.h</key>
 		<data>
-		cQOILERWQGcqVCdNdlcWmXesOok=
+		4x3YtAXGtIZYgrqXw4XyM+epsW8=
 		</data>
-		<key>Headers/ZDRMADialogView.h</key>
+		<key>Headers/ZDKHelpCenterTableDelegate.h</key>
 		<data>
-		Yulk8pxtdYt1autVT6aDByBqzKg=
+		zmTHGbMnzCr4ZeQ87rdAeensOLk=
 		</data>
-		<key>Headers/ZDRMADialogViewController.h</key>
+		<key>Headers/ZDKKeychainWrapper.h</key>
 		<data>
-		aSutwiro3Ut3amylgJNywh7/EJQ=
+		j4UPGkJ3TNOCu8yTC1yQGH/zY4A=
 		</data>
-		<key>Headers/ZDRMAFeedbackView.h</key>
+		<key>Headers/ZDKModelObject.h</key>
 		<data>
-		JQOqeFFa1KzepSw23WaAIe7sDQ4=
+		ON06T5RxTSu7ZI0ZiQFSY1hIdWI=
 		</data>
-		<key>Headers/ZDReachability.h</key>
+		<key>Headers/ZDKRMA.h</key>
 		<data>
-		AZuUugJYfRVD7xcJm8Be0aKWGA0=
+		OguVhNZj9Xm9DKGL4DyRFKZuWgw=
 		</data>
-		<key>Headers/ZDRequest.h</key>
+		<key>Headers/ZDKRMAConfigObject.h</key>
 		<data>
-		d/70fxhiZgz0ttzzQhGgXUruQVE=
+		ZKxzmujty0WN7LdtNXkDQbWLjcE=
 		</data>
-		<key>Headers/ZDRequestComment.h</key>
+		<key>Headers/ZDKRMADataObject.h</key>
 		<data>
-		qCt9iTiX9ucNOy85+DQf0UJt22U=
+		wJVMAWLgLi2hfk/9k7V0KD65lWs=
 		</data>
-		<key>Headers/ZDRequestCommentTableCell.h</key>
+		<key>Headers/ZDKRMADialogView.h</key>
 		<data>
-		6tu2cxoIZG5gmLMJalKR+bVJGdI=
+		xLDJEHsuj4fhKWu70AtlzB5sxYE=
 		</data>
-		<key>Headers/ZDRequestCommentsTable.h</key>
+		<key>Headers/ZDKRMADialogViewController.h</key>
 		<data>
-		sMSloDexsD38xIvFGsIMswAn8qQ=
+		N334+EyCQPzM7DcHjWH1bX0WKMo=
 		</data>
-		<key>Headers/ZDRequestCommentsView.h</key>
+		<key>Headers/ZDKRMAFeedbackView.h</key>
 		<data>
-		vjn3d7xK9QN7OO1J2NTGdijHpiM=
+		0/iS3IWkJpOgSzYaKY6VjJSyGC8=
 		</data>
-		<key>Headers/ZDRequestCommentsViewController.h</key>
+		<key>Headers/ZDKRateMyAppSettings.h</key>
 		<data>
-		FHbEj6cmAj6z4jp624nTZttzv3E=
+		X+Apht3FQ5mjgYUzCvGylSUdQfI=
 		</data>
-		<key>Headers/ZDRequestListTable.h</key>
+		<key>Headers/ZDKReachability.h</key>
 		<data>
-		UCqe6nnGOpSN/xd8kJ9EHLNz788=
+		xD3MwbmCCnV/LvE1/DcdiilyF+Y=
 		</data>
-		<key>Headers/ZDRequestListTableCell.h</key>
+		<key>Headers/ZDKRequest.h</key>
 		<data>
-		TVpRnH73JgGHWu/KFrm9NWRj7lg=
+		UqdIz9mFFa/d2QvkOGBhSSO22cY=
 		</data>
-		<key>Headers/ZDRequests.h</key>
+		<key>Headers/ZDKRequestComment.h</key>
 		<data>
-		qEg9BRAUNzcLRsd2uWODak98AjM=
+		QLAlujJx+QzAfx8kUT/l2jWBR20=
 		</data>
-		<key>Headers/ZDSpinnerDelegate.h</key>
+		<key>Headers/ZDKRequestCommentTableCell.h</key>
 		<data>
-		i+VgqC9HHVLEb7C04bciwhdAq+I=
+		g+Gqtbj3NqGkrNlHB9zWu3o6zQo=
 		</data>
-		<key>Headers/ZDSupportView.h</key>
+		<key>Headers/ZDKRequestCommentsTable.h</key>
 		<data>
-		d5/Xzol1uYnbte7YsZeiN/s9OZU=
+		/AsOyh/0WfXzevsndru8C4aPN0A=
 		</data>
-		<key>Headers/ZDSupportViewController.h</key>
+		<key>Headers/ZDKRequestCommentsView.h</key>
 		<data>
-		KSH+wCN8ob9N9WJ+CZKAy+PsFXI=
+		wEjpRt7VTvDtz67AKgsLePdBD4A=
 		</data>
-		<key>Headers/ZDToast.h</key>
+		<key>Headers/ZDKRequestCommentsViewController.h</key>
 		<data>
-		wHdKNq5UCpEeUbvHFR/UbgJoDck=
+		BhTk3rLGE3NhPT5COBbchcK1ks4=
 		</data>
-		<key>Headers/ZDToastStyle.h</key>
+		<key>Headers/ZDKRequestContainer.h</key>
 		<data>
-		4Fa/alg0nSYEaolTX6KdlDMC9Eg=
+		EKG1z3bUzIWWBwQt9QYmtdPjvM0=
 		</data>
-		<key>Headers/ZDToastView.h</key>
+		<key>Headers/ZDKRequestListTable.h</key>
 		<data>
-		vp2tZdMvfkIlUKEayUNAZjSp5Dc=
+		9QJVE1ui2jgXwBeduAp64qyEl08=
 		</data>
-		<key>Headers/ZDUI.h</key>
+		<key>Headers/ZDKRequestListTableCell.h</key>
 		<data>
-		zvh6o2cGZFDm2IO7mwHcGhvBPZY=
+		/et/8V86N6g90R5JanKzIJ8EP54=
 		</data>
-		<key>Headers/ZDUIActivityView.h</key>
+		<key>Headers/ZDKRequestListViewController.h</key>
 		<data>
-		nmKvtO6vQba9/J7+Ht5EDIPdZOQ=
+		PR+bwcuHDrxD5MPeMe/Gp0WA2Qw=
 		</data>
-		<key>Headers/ZDUIStyle.h</key>
+		<key>Headers/ZDKRequests.h</key>
 		<data>
-		G5Or4X6uIyFeX9OXmvTMBau+YGk=
+		zT46tT6qsUeSUb77oBoKV70o1SI=
 		</data>
-		<key>Headers/ZDUITextView.h</key>
+		<key>Headers/ZDKSpinnerDelegate.h</key>
 		<data>
-		STCLqGJz6Oqrcr6mPrJKdLZQfOQ=
+		Hr4L54ielJ/Ry7WEBW9/QT5q2/M=
 		</data>
-		<key>Headers/ZDUITextViewDelegate.h</key>
+		<key>Headers/ZDKSupportView.h</key>
 		<data>
-		Eteskta4ChKHRk0mWZdADcEo9nk=
+		0UhXIVPqEAfGbg/+i7EeTeOIoik=
 		</data>
-		<key>Headers/ZDUIUIViewController.h</key>
+		<key>Headers/ZDKSupportViewController.h</key>
 		<data>
-		jl20HiA3mnsYmmDgWqn0UrQs+ZI=
+		nW6mLlED4F5KfBJeM8RR/g2toI8=
 		</data>
-		<key>Headers/ZDUser.h</key>
+		<key>Headers/ZDKToast.h</key>
 		<data>
-		VivIUj96gmpKbFcBOePSPQUYckk=
+		XknXXQZr6geW4EfNcYJmYMmO6pI=
 		</data>
-		<key>Headers/ZDUsers.h</key>
+		<key>Headers/ZDKToastStyle.h</key>
 		<data>
-		qszIZnW5mQII5Iv2qFTE3zYSi5I=
+		6LJS8suJ2ugwmszywL19Unfay/s=
+		</data>
+		<key>Headers/ZDKToastView.h</key>
+		<data>
+		/IaHLBrtZV5JANrmvyYo1O23dm8=
+		</data>
+		<key>Headers/ZDKUIActivityView.h</key>
+		<data>
+		Bw4j9FtxEI17mbIM6mvD/8nRhws=
+		</data>
+		<key>Headers/ZDKUITextView.h</key>
+		<data>
+		U6XvoqIN7Z44o/LhsIeXDSK4+7I=
+		</data>
+		<key>Headers/ZDKUITextViewDelegate.h</key>
+		<data>
+		2C7i0zObk6X5U81F4soOjRBd2Lg=
+		</data>
+		<key>Headers/ZDKUIUtil.h</key>
+		<data>
+		Jbx7nZTrWD4jSUfyfrpOy/4ozaw=
+		</data>
+		<key>Headers/ZDKUIViewController.h</key>
+		<data>
+		vIvOFpn6ieVCgmTrcrI40s6UZuE=
+		</data>
+		<key>Headers/ZDKUser.h</key>
+		<data>
+		VwvuT18HmyLBkWidMv87d8bBY9U=
+		</data>
+		<key>Headers/ZDKUserContainer.h</key>
+		<data>
+		xNpncNYFhCefghcEqQ74Ojtk2m0=
+		</data>
+		<key>Headers/ZendeskSDK-Prefix.pch</key>
+		<data>
+		tq8GSSzNN1IewWMrEeb9n9by508=
 		</data>
 		<key>Headers/ZendeskSDK.h</key>
 		<data>
-		/aqkhU3p2mFrqxeXwF9NSL/AN+4=
+		VsHmJyQWHgrBuiaiyocqLTBsXRA=
 		</data>
 		<key>Headers/ZendeskSDKConstants.h</key>
 		<data>
-		VEmoitX9bYfI3VjeB7maZ2hfN20=
+		Uecl2FVcIn+n2xJF7BzRPnk/i/U=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/ZDAPI.h</key>
+		<key>Headers/ZDKAPI.h</key>
 		<data>
-		nFvceq+16N2vIwuNFCrwJ5k1u7U=
+		V9YrOyuFic2/mhHVNpAmOJYoi+A=
 		</data>
-		<key>Headers/ZDAccount.h</key>
+		<key>Headers/ZDKAccount.h</key>
 		<data>
-		0OuCYB7o2mAWujJXuf7Qbl5zVy4=
+		KRc+XM0TuOeRuDmx13L5s8DejOg=
 		</data>
-		<key>Headers/ZDArticleView.h</key>
+		<key>Headers/ZDKAppSettings.h</key>
 		<data>
-		TwDH7YHZK+GjUTAX1ctAPt5/Gjs=
+		T3FvsHTWuDunSxDucLrul4uFRHw=
 		</data>
-		<key>Headers/ZDArticleViewController.h</key>
+		<key>Headers/ZDKArticleView.h</key>
 		<data>
-		+ZzUcomoaRiZtSZJwdS+1gLYtRM=
+		HLDw7Bc2qTQYex4qYYP9WO1X/E8=
 		</data>
-		<key>Headers/ZDCommentEntryView.h</key>
+		<key>Headers/ZDKArticleViewController.h</key>
 		<data>
-		4oRuOGM9cAfXTOmtFol8+HUP/ak=
+		mBYYZErYEbkvBesr0cZ0XsVaj6Q=
 		</data>
-		<key>Headers/ZDCoreCreateRequestViewController.h</key>
+		<key>Headers/ZDKBundleUtils.h</key>
 		<data>
-		H0pDaQ6csktXXR+Z/VSlq5jp++M=
+		GqMQsBcfAUaNWVSUj48NGfw/eho=
 		</data>
-		<key>Headers/ZDCoreSDK.h</key>
+		<key>Headers/ZDKCommentEntryView.h</key>
 		<data>
-		3Sz5Eajriw/HHFMU9dzdFFcpwA4=
+		dfFTGWhPnaq1fU8+xLxZYXmfnX0=
 		</data>
-		<key>Headers/ZDDeviceInfo.h</key>
+		<key>Headers/ZDKConfig.h</key>
 		<data>
-		z0mSj3rjjShcMDe9f6nFEYWu+6g=
+		lmU7aaHfpzPgyiWAx8V4JJ+brpE=
 		</data>
-		<key>Headers/ZDDispatcher.h</key>
+		<key>Headers/ZDKContactUsSettings.h</key>
 		<data>
-		dAGFybqDeSOOp6cYhgtujANzqyI=
+		1WKRvZLF5Os3rrheU3kfwhq2uvA=
 		</data>
-		<key>Headers/ZDDispatcherDelegate.h</key>
+		<key>Headers/ZDKConversationsSettings.h</key>
 		<data>
-		SBHjBxCDtb5G3kxX2dweGA+6ItM=
+		rw0dGc8DyzXBNljt1Ychnui/Oxk=
 		</data>
-		<key>Headers/ZDDispatcherResponse.h</key>
+		<key>Headers/ZDKCreateRequestView.h</key>
 		<data>
-		Y9STJS4Ej4FH4CpOd0pboGE8YGk=
+		Dd17zAqImNYIUMRTM6qCAUwa2MI=
 		</data>
-		<key>Headers/ZDETag.h</key>
+		<key>Headers/ZDKCreateRequestViewController.h</key>
 		<data>
-		VGB1M0x6mnFnPbBihf+K8coaudk=
+		kYio1ldhvsbuD/JeXdH3ADuw5UA=
 		</data>
-		<key>Headers/ZDHelpCenter.h</key>
+		<key>Headers/ZDKDeviceInfo.h</key>
 		<data>
-		dMBpNAqhDHpaHblesyWtVUEd1sw=
+		Zsp8ccR3M8stlF06H5OQ8J98VYc=
 		</data>
-		<key>Headers/ZDHelpCenterArticle.h</key>
+		<key>Headers/ZDKDispatcher.h</key>
 		<data>
-		v0qyQPPeWn7jifFsVTl8rwEvv3g=
+		8f1Qa0oVSsV/w8t2kEvWPfTm+MY=
 		</data>
-		<key>Headers/ZDHelpCenterArticleProvider.h</key>
+		<key>Headers/ZDKDispatcherDelegate.h</key>
 		<data>
-		hKndMkpFt47R1Akd8398N3CNmfw=
+		Hb+P0Lif6TGcQLG6k7DJ9oHl/hU=
 		</data>
-		<key>Headers/ZDHelpCenterAttachment.h</key>
+		<key>Headers/ZDKDispatcherResponse.h</key>
 		<data>
-		gl9K7fMYMeb10YysXiK/hk37Hpg=
+		r1hazJ1q+/NB5MrIURY0UBwmkJY=
 		</data>
-		<key>Headers/ZDHelpCenterAttachmentCell.h</key>
+		<key>Headers/ZDKETag.h</key>
 		<data>
-		Q4ETKZpezfphuLpJ/LbCGbJtOAY=
+		r3FdQYF8sqFEd1Kb55GmfpksWJw=
 		</data>
-		<key>Headers/ZDHelpCenterAttachmentProvider.h</key>
+		<key>Headers/ZDKHelpCenter.h</key>
 		<data>
-		F5kpHyz3GNAh5vie6r7pxd3XgSg=
+		cs0oEKF4wicKe6+ImtYFSi8rCoU=
 		</data>
-		<key>Headers/ZDHelpCenterCategory.h</key>
+		<key>Headers/ZDKHelpCenterArticle.h</key>
 		<data>
-		2TtmbGTXh3ZP6GpXSZbMjoCPnr4=
+		eBBxq/hlq9hJC1B6JjDs/S28n4E=
 		</data>
-		<key>Headers/ZDHelpCenterCategoryProvider.h</key>
+		<key>Headers/ZDKHelpCenterArticleProvider.h</key>
 		<data>
-		qT38DpULsjQh3ENaNRILz6jYnjU=
+		3lP4rngY5sqtoiOEObLYCxqF5qk=
 		</data>
-		<key>Headers/ZDHelpCenterDataSource.h</key>
+		<key>Headers/ZDKHelpCenterAttachment.h</key>
 		<data>
-		UpoWqffgM2MLCxs0ZOnnr7UKfOY=
+		aRFgfroTZyFUwniPJ49xZLTgY/4=
 		</data>
-		<key>Headers/ZDHelpCenterProvider.h</key>
+		<key>Headers/ZDKHelpCenterAttachmentCell.h</key>
 		<data>
-		HGUCEKvYcfLJfIE1rvb4gMDZKiY=
+		iydGOevMf7JZ72vujyjn/Sq7gOA=
 		</data>
-		<key>Headers/ZDHelpCenterSearchProvider.h</key>
+		<key>Headers/ZDKHelpCenterAttachmentProvider.h</key>
 		<data>
-		gXS68TKDkOrYzHcss2IXmaKlL/o=
+		OWmq+Y0Fx0rkszNXWweqeJld3PM=
 		</data>
-		<key>Headers/ZDHelpCenterSearchResultCell.h</key>
+		<key>Headers/ZDKHelpCenterCategory.h</key>
 		<data>
-		e0oezuyUofGqU/+seaYkHE1u9u8=
+		KIdf0RstahTIoZ2oNlxka4YPC5g=
 		</data>
-		<key>Headers/ZDHelpCenterSection.h</key>
+		<key>Headers/ZDKHelpCenterCategoryProvider.h</key>
 		<data>
-		E3mBc5StvYpJsOEjm3/Ee5MdhT0=
+		+93yA5RTDiaQil7PxPFFJxYtJxE=
 		</data>
-		<key>Headers/ZDHelpCenterSectionProvider.h</key>
+		<key>Headers/ZDKHelpCenterDataSource.h</key>
 		<data>
-		Xq6vJio+P3+etABaWalRQsXtekE=
+		sD/j7fdQK/1f7hXokorWrWLaKrI=
 		</data>
-		<key>Headers/ZDHelpCenterTableDelegate.h</key>
+		<key>Headers/ZDKHelpCenterProvider.h</key>
 		<data>
-		Hx6QfpwOPl3IGs3Zbs8K/YK33FU=
+		XRMtxg6sndKTNhV12Lfk+wyJ5gM=
 		</data>
-		<key>Headers/ZDKeychainWrapper.h</key>
+		<key>Headers/ZDKHelpCenterSearchProvider.h</key>
 		<data>
-		BhT4VtmLeqpfR1PWOUJdQbxgbME=
+		k8KU+9co/BzwMHxidULq0iBAMfY=
 		</data>
-		<key>Headers/ZDModelObject.h</key>
+		<key>Headers/ZDKHelpCenterSearchResultCell.h</key>
 		<data>
-		fLLposQJNyvA9A4/oKXjLLxo5Jg=
+		Aa5pfYSQ6YOPTOPOSkDtRXX4N8M=
 		</data>
-		<key>Headers/ZDRMA.h</key>
+		<key>Headers/ZDKHelpCenterSection.h</key>
 		<data>
-		IXp7vyktTd1dsCmdEfUIxM14CCM=
+		sYYHjJMIr8/fBGXoPuSZ9KztSlg=
 		</data>
-		<key>Headers/ZDRMAConfigObject.h</key>
+		<key>Headers/ZDKHelpCenterSectionProvider.h</key>
 		<data>
-		e/Yax5GCtwur3Di+iBjNCZIFKKw=
+		sR8uGw/XxbGKaOYrg0ixfBghemY=
 		</data>
-		<key>Headers/ZDRMADataObject.h</key>
+		<key>Headers/ZDKHelpCenterSettings.h</key>
 		<data>
-		cQOILERWQGcqVCdNdlcWmXesOok=
+		4x3YtAXGtIZYgrqXw4XyM+epsW8=
 		</data>
-		<key>Headers/ZDRMADialogView.h</key>
+		<key>Headers/ZDKHelpCenterTableDelegate.h</key>
 		<data>
-		Yulk8pxtdYt1autVT6aDByBqzKg=
+		zmTHGbMnzCr4ZeQ87rdAeensOLk=
 		</data>
-		<key>Headers/ZDRMADialogViewController.h</key>
+		<key>Headers/ZDKKeychainWrapper.h</key>
 		<data>
-		aSutwiro3Ut3amylgJNywh7/EJQ=
+		j4UPGkJ3TNOCu8yTC1yQGH/zY4A=
 		</data>
-		<key>Headers/ZDRMAFeedbackView.h</key>
+		<key>Headers/ZDKModelObject.h</key>
 		<data>
-		JQOqeFFa1KzepSw23WaAIe7sDQ4=
+		ON06T5RxTSu7ZI0ZiQFSY1hIdWI=
 		</data>
-		<key>Headers/ZDReachability.h</key>
+		<key>Headers/ZDKRMA.h</key>
 		<data>
-		AZuUugJYfRVD7xcJm8Be0aKWGA0=
+		OguVhNZj9Xm9DKGL4DyRFKZuWgw=
 		</data>
-		<key>Headers/ZDRequest.h</key>
+		<key>Headers/ZDKRMAConfigObject.h</key>
 		<data>
-		d/70fxhiZgz0ttzzQhGgXUruQVE=
+		ZKxzmujty0WN7LdtNXkDQbWLjcE=
 		</data>
-		<key>Headers/ZDRequestComment.h</key>
+		<key>Headers/ZDKRMADataObject.h</key>
 		<data>
-		qCt9iTiX9ucNOy85+DQf0UJt22U=
+		wJVMAWLgLi2hfk/9k7V0KD65lWs=
 		</data>
-		<key>Headers/ZDRequestCommentTableCell.h</key>
+		<key>Headers/ZDKRMADialogView.h</key>
 		<data>
-		6tu2cxoIZG5gmLMJalKR+bVJGdI=
+		xLDJEHsuj4fhKWu70AtlzB5sxYE=
 		</data>
-		<key>Headers/ZDRequestCommentsTable.h</key>
+		<key>Headers/ZDKRMADialogViewController.h</key>
 		<data>
-		sMSloDexsD38xIvFGsIMswAn8qQ=
+		N334+EyCQPzM7DcHjWH1bX0WKMo=
 		</data>
-		<key>Headers/ZDRequestCommentsView.h</key>
+		<key>Headers/ZDKRMAFeedbackView.h</key>
 		<data>
-		vjn3d7xK9QN7OO1J2NTGdijHpiM=
+		0/iS3IWkJpOgSzYaKY6VjJSyGC8=
 		</data>
-		<key>Headers/ZDRequestCommentsViewController.h</key>
+		<key>Headers/ZDKRateMyAppSettings.h</key>
 		<data>
-		FHbEj6cmAj6z4jp624nTZttzv3E=
+		X+Apht3FQ5mjgYUzCvGylSUdQfI=
 		</data>
-		<key>Headers/ZDRequestListTable.h</key>
+		<key>Headers/ZDKReachability.h</key>
 		<data>
-		UCqe6nnGOpSN/xd8kJ9EHLNz788=
+		xD3MwbmCCnV/LvE1/DcdiilyF+Y=
 		</data>
-		<key>Headers/ZDRequestListTableCell.h</key>
+		<key>Headers/ZDKRequest.h</key>
 		<data>
-		TVpRnH73JgGHWu/KFrm9NWRj7lg=
+		UqdIz9mFFa/d2QvkOGBhSSO22cY=
 		</data>
-		<key>Headers/ZDRequests.h</key>
+		<key>Headers/ZDKRequestComment.h</key>
 		<data>
-		qEg9BRAUNzcLRsd2uWODak98AjM=
+		QLAlujJx+QzAfx8kUT/l2jWBR20=
 		</data>
-		<key>Headers/ZDSpinnerDelegate.h</key>
+		<key>Headers/ZDKRequestCommentTableCell.h</key>
 		<data>
-		i+VgqC9HHVLEb7C04bciwhdAq+I=
+		g+Gqtbj3NqGkrNlHB9zWu3o6zQo=
 		</data>
-		<key>Headers/ZDSupportView.h</key>
+		<key>Headers/ZDKRequestCommentsTable.h</key>
 		<data>
-		d5/Xzol1uYnbte7YsZeiN/s9OZU=
+		/AsOyh/0WfXzevsndru8C4aPN0A=
 		</data>
-		<key>Headers/ZDSupportViewController.h</key>
+		<key>Headers/ZDKRequestCommentsView.h</key>
 		<data>
-		KSH+wCN8ob9N9WJ+CZKAy+PsFXI=
+		wEjpRt7VTvDtz67AKgsLePdBD4A=
 		</data>
-		<key>Headers/ZDToast.h</key>
+		<key>Headers/ZDKRequestCommentsViewController.h</key>
 		<data>
-		wHdKNq5UCpEeUbvHFR/UbgJoDck=
+		BhTk3rLGE3NhPT5COBbchcK1ks4=
 		</data>
-		<key>Headers/ZDToastStyle.h</key>
+		<key>Headers/ZDKRequestContainer.h</key>
 		<data>
-		4Fa/alg0nSYEaolTX6KdlDMC9Eg=
+		EKG1z3bUzIWWBwQt9QYmtdPjvM0=
 		</data>
-		<key>Headers/ZDToastView.h</key>
+		<key>Headers/ZDKRequestListTable.h</key>
 		<data>
-		vp2tZdMvfkIlUKEayUNAZjSp5Dc=
+		9QJVE1ui2jgXwBeduAp64qyEl08=
 		</data>
-		<key>Headers/ZDUI.h</key>
+		<key>Headers/ZDKRequestListTableCell.h</key>
 		<data>
-		zvh6o2cGZFDm2IO7mwHcGhvBPZY=
+		/et/8V86N6g90R5JanKzIJ8EP54=
 		</data>
-		<key>Headers/ZDUIActivityView.h</key>
+		<key>Headers/ZDKRequestListViewController.h</key>
 		<data>
-		nmKvtO6vQba9/J7+Ht5EDIPdZOQ=
+		PR+bwcuHDrxD5MPeMe/Gp0WA2Qw=
 		</data>
-		<key>Headers/ZDUIStyle.h</key>
+		<key>Headers/ZDKRequests.h</key>
 		<data>
-		G5Or4X6uIyFeX9OXmvTMBau+YGk=
+		zT46tT6qsUeSUb77oBoKV70o1SI=
 		</data>
-		<key>Headers/ZDUITextView.h</key>
+		<key>Headers/ZDKSpinnerDelegate.h</key>
 		<data>
-		STCLqGJz6Oqrcr6mPrJKdLZQfOQ=
+		Hr4L54ielJ/Ry7WEBW9/QT5q2/M=
 		</data>
-		<key>Headers/ZDUITextViewDelegate.h</key>
+		<key>Headers/ZDKSupportView.h</key>
 		<data>
-		Eteskta4ChKHRk0mWZdADcEo9nk=
+		0UhXIVPqEAfGbg/+i7EeTeOIoik=
 		</data>
-		<key>Headers/ZDUIUIViewController.h</key>
+		<key>Headers/ZDKSupportViewController.h</key>
 		<data>
-		jl20HiA3mnsYmmDgWqn0UrQs+ZI=
+		nW6mLlED4F5KfBJeM8RR/g2toI8=
 		</data>
-		<key>Headers/ZDUser.h</key>
+		<key>Headers/ZDKToast.h</key>
 		<data>
-		VivIUj96gmpKbFcBOePSPQUYckk=
+		XknXXQZr6geW4EfNcYJmYMmO6pI=
 		</data>
-		<key>Headers/ZDUsers.h</key>
+		<key>Headers/ZDKToastStyle.h</key>
 		<data>
-		qszIZnW5mQII5Iv2qFTE3zYSi5I=
+		6LJS8suJ2ugwmszywL19Unfay/s=
+		</data>
+		<key>Headers/ZDKToastView.h</key>
+		<data>
+		/IaHLBrtZV5JANrmvyYo1O23dm8=
+		</data>
+		<key>Headers/ZDKUIActivityView.h</key>
+		<data>
+		Bw4j9FtxEI17mbIM6mvD/8nRhws=
+		</data>
+		<key>Headers/ZDKUITextView.h</key>
+		<data>
+		U6XvoqIN7Z44o/LhsIeXDSK4+7I=
+		</data>
+		<key>Headers/ZDKUITextViewDelegate.h</key>
+		<data>
+		2C7i0zObk6X5U81F4soOjRBd2Lg=
+		</data>
+		<key>Headers/ZDKUIUtil.h</key>
+		<data>
+		Jbx7nZTrWD4jSUfyfrpOy/4ozaw=
+		</data>
+		<key>Headers/ZDKUIViewController.h</key>
+		<data>
+		vIvOFpn6ieVCgmTrcrI40s6UZuE=
+		</data>
+		<key>Headers/ZDKUser.h</key>
+		<data>
+		VwvuT18HmyLBkWidMv87d8bBY9U=
+		</data>
+		<key>Headers/ZDKUserContainer.h</key>
+		<data>
+		xNpncNYFhCefghcEqQ74Ojtk2m0=
+		</data>
+		<key>Headers/ZendeskSDK-Prefix.pch</key>
+		<data>
+		tq8GSSzNN1IewWMrEeb9n9by508=
 		</data>
 		<key>Headers/ZendeskSDK.h</key>
 		<data>
-		/aqkhU3p2mFrqxeXwF9NSL/AN+4=
+		VsHmJyQWHgrBuiaiyocqLTBsXRA=
 		</data>
 		<key>Headers/ZendeskSDKConstants.h</key>
 		<data>
-		VEmoitX9bYfI3VjeB7maZ2hfN20=
+		Uecl2FVcIn+n2xJF7BzRPnk/i/U=
 		</data>
 	</dict>
 	<key>rules</key>

@@ -25,3 +25,5 @@ ZDTests/KIF
 .gitignore.swp
 **/Thumbs.db
 
+
+*.xcuserstate

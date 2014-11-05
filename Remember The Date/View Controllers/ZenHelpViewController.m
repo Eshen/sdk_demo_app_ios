@@ -2,16 +2,13 @@
 //  ZenHelpViewController.m
 //  Remember The Date
 //
-//  Created by Eduardo Fonseca on 10/10/14.
+//  Created by Zendesk on 10/10/14.
 //  Copyright (c) 2014 RememberTheDate. All rights reserved.
 //
 
+#import <ZendeskSDK/ZendeskSDK.h>
+
 #import "ZenHelpViewController.h"
-
-
-#import <ZendeskSDK/ZDHelpCenter.h>
-#import <ZendeskSDK/ZDCoreSDK.h>
-#import <ZendeskSDK/ZDRMA.h>
 #import "RequestListViewController.h"
 #import "SaveTheDateTabBarController.h"
 
@@ -42,34 +39,44 @@
 
     
     NSString * email = [self userEmail];
-    
-    if ([email length] > 0) {
-        [ZDCoreSDK configure:^(ZDAccount *account, ZDRequestCreationConfig *requestCreationConfig) {
-            requestCreationConfig.tags = @[@"ios"];
-            requestCreationConfig.additionalRequestInfo = @"";
-            
-            account.email = email;
-            account.userToken = email;
-        }];
-    }
 
+    [ZDKRequests configure:^(ZDKAccount *account, ZDKRequestCreationConfig *requestCreationConfig) {
+        requestCreationConfig.tags = @[@"ios"];
+        requestCreationConfig.additionalRequestInfo = @"";
+        
+        
+        account.email = email;
+        
+        // our JWT endpoint for this application is using the email as the user identifier for user validation
+        account.userId = email;
+    }];
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
 }
 
+//
+//  Show support component
+//
+//
 
 - (IBAction)showHelpCenter:(id)sender {
-        [ZDHelpCenter showHelpCenterWithNavController:self.navigationController];
+    SaveTheDateTabBarController * tabbarController = (SaveTheDateTabBarController*)self.tabBarController;
+    [tabbarController hideTabbar];
+
+    
+    [ZDKHelpCenter showHelpCenterWithNavController:self.navigationController];
 }
 
-- (IBAction)contactSupport:(id)sender {
-    if ([[self userEmail] length] > 0) {
+//
+//  Request Creation component
+//
+//
 
-         [ZDCoreSDK showRequestCreationWithNavController:self.navigationController
+- (IBAction)contactSupport:(id)sender {
+         [ZDKRequests showRequestCreationWithNavController:self.navigationController
                                         withSuccess:^(NSData *data) {
                                             
                                             // do something here if you want to...
@@ -78,23 +85,24 @@
                                             
                                             // do something here if you want to...
                                         }];
-    }
-    else {
-        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Wait a second..." message:@"You need to go in the profile screen and enter your email ..." delegate:self cancelButtonTitle:@"OK, doing it now :)" otherButtonTitles:nil];
-        [alert show];
-    }
 }
+
+//
+//  Rate My App component
+//
+// The send button feedback is disabled as the control can not be trigger programmatically
+// but is driven by the configuration done on the Zendesk Mobile SDK Administration
+//
+//  The following code is here for demonstration purpose only.
+//
+
 - (IBAction)sendFeedback:(id)sender {
     
     NSString *email = [self userEmail];
     if ([email length] > 0) {
         
-        
-        
-        // Setup Rate My App
-        [ZDRMA configure:^(ZDAccount *account, ZDRMAConfigObject *config) {
-            
-            
+         // Setup Rate My App
+        [ZDKRMA configure:^(ZDKAccount *account, ZDKRMAConfigObject *config) {
             
             account.email = email;
             
@@ -112,15 +120,14 @@
         // OPTIONAL - Customize appearance
         /////////////////////////////////////////////////////////////////////////////////////////////////////
         
-        [ZDRMA configure:^(ZDAccount *account, ZDRMAConfigObject *config) {
+        [ZDKRMA configure:^(ZDKAccount *account, ZDKRMAConfigObject *config) {
             
             // set success and error dialog images images
             config.successImageName = @"rma_tick";
             config.errorImageName = @"rma_error";
         }];
         
-        
-        [ZDRMA showEveryTimeInView:self.view];
+        [ZDKRMA showInView:self.view];
         
     } else {
         UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Wait a second..." message:@"You need to go in the profile screen and enter your email ..." delegate:self cancelButtonTitle:@"OK, doing it now :)" otherButtonTitles:nil];
@@ -134,6 +141,7 @@
         
         SaveTheDateTabBarController * tabbarController = (SaveTheDateTabBarController*)self.tabBarController;
         [tabbarController hideTabbar];
+        
         RequestListViewController *vc = [RequestListViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }
@@ -144,9 +152,16 @@
     
 }
 
+
 -(void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    //
+    // Setup the support information
+    //
     [self setupSupportInformation];
+    
+    
     SaveTheDateTabBarController * tabbarController = (SaveTheDateTabBarController*)self.tabBarController;
     [tabbarController showTabbar];
 }
@@ -154,7 +169,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
